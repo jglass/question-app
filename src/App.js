@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Question from './Question';
 
 function App(props) {
   const [selectedValue, setSelectedValue] = useState("");
@@ -8,49 +9,11 @@ function App(props) {
 
   return (
     <div>
-      <div>
-        <label>
-          <input type="radio"
-            value={props.QuestionOne}
-            name="question"
-            onClick={onChange}
-          />
-         {props.QuestionOne}
-        </label>
-      </div>
-      <div>
-        <label>
-          <input type="radio"
-            value={props.QuestionTwo}
-            name="question"
-            onClick={onChange}
-          />
-         {props.QuestionTwo}
-        </label>
-      </div>
-      <div>
-        <label>
-          <input type="radio"
-            value={props.QuestionThree}
-            name="question"
-            onClick={onChange}
-          />
-         {props.QuestionThree}
-        </label>
-      </div>
-      <div>
-        <label>
-          <input type="radio"
-            value={props.QuestionFour}
-            name="question"
-            onClick={onChange}
-          />
-         {props.QuestionFour}
-        </label>
-      </div>
-      <div>
-        Selected value is {selectedValue}
-      </div>
+      <Question question={props.QuestionOne} onChange={onChange} />
+      <Question question={props.QuestionTwo} onChange={onChange} />
+      <Question question={props.QuestionThree} onChange={onChange} />
+      <Question question={props.QuestionFour} onChange={onChange} />
+      Selected value is {selectedValue}
     </div>
   );
 }
