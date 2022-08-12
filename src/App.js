@@ -1,34 +1,55 @@
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
+function App(props) {
+  const [selectedValue, setSelectedValue] = useState("");
+  function onChange(e) {
+    setSelectedValue(e.target.value);
+  }
+
   return (
     <div>
       <div>
         <label>
           <input type="radio"
-            value="A"
+            value={props.QuestionOne}
             name="question"
+            onClick={onChange}
           />
-         Question A
+         {props.QuestionOne}
         </label>
       </div>
       <div>
         <label>
           <input type="radio"
-            value="B"
+            value={props.QuestionTwo}
             name="question"
+            onClick={onChange}
           />
-         Question B
+         {props.QuestionTwo}
         </label>
       </div>
       <div>
         <label>
           <input type="radio"
-            value="C"
+            value={props.QuestionThree}
             name="question"
+            onClick={onChange}
           />
-         Question C
+         {props.QuestionThree}
         </label>
+      </div>
+      <div>
+        <label>
+          <input type="radio"
+            value={props.QuestionFour}
+            name="question"
+            onClick={onChange}
+          />
+         {props.QuestionFour}
+        </label>
+      </div>
+      <div>
+        Selected value is {selectedValue}
       </div>
     </div>
   );
