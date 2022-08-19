@@ -1,5 +1,4 @@
-const InitialData = {
-  questionA:
+const InitialData = [
     { questionValue: "Question A",
     questionText: "Reggae",
     nextChoices: [
@@ -24,7 +23,6 @@ const InitialData = {
           recommendation: "UB40",
         }},
     ] },
-  questionB:
     { questionValue: "Question B",
       questionText: "Rock",
     nextChoices: [
@@ -50,15 +48,13 @@ const InitialData = {
           }},
        ]
     },
-  questionC:
     { questionValue: "Question C",
       questionText: "Jazz",
       step: 1 },
-  questionD:
     { questionValue: "Question D",
       questionText: "Classical",
       step: 1 },
 
-};
+];
 
 export default InitialData;

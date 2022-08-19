@@ -3,10 +3,10 @@ import Question from './Question';
 import InitialData from './InitialData';
 
 function App(props) {
-  let questionsArray = [InitialData.questionA,
-                        InitialData.questionB,
-                        InitialData.questionC,
-                        InitialData.questionD];
+  let questionsArray = [InitialData[0],
+                        InitialData[1],
+                        InitialData[2],
+                        InitialData[3]];
   const [selectedValue, setSelectedValue] = useState("");
   const [questionsValue, setQuestionsValue] = useState(questionsArray);
   function onChange(e) {
@@ -22,25 +22,10 @@ function App(props) {
 
   function formSubmit(event) {
     event.preventDefault();
-        switch(selectedValue) {
-          case "Question A":
-            setQuestionsValue(["Question E", "Question F", "Question G", "Question H"]);
-            break;
-          case "Question B":
-            setQuestionsValue(["Question I", "Question J", "Question K", "Question L"]);
-            break;
-            case "Question C":
-              setQuestionsValue(["Question M", "Question N", "Question O", "Question P"]);
-             break;
-           case "Question D":
-             setQuestionsValue(["Question Q", "Question R", "Question S", "Question T"]);
-             break;
-          default:
-            setQuestionsValue(["Question A", "Question B", "Question C", "Question D"]);
-            break;
-        }
-        var radio = document.querySelector('input[type=radio][name=question]:checked');
-        if(radio) { radio.checked = false; }
+    const choice = InitialData.find(q => q.questionText === selectedValue);
+    setQuestionsValue(choice.nextChoices);
+    var radio = document.querySelector('input[type=radio][name=question]:checked');
+    if(radio) { radio.checked = false; }
   }
 
   return (
