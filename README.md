@@ -70,8 +70,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ### TODO
+- Make sure flow is working properly
+- Add more data
 - Investigate API for pulling in data or add data manually
 - Final recommendation content
 - Styling
+- Collage of artist and album covers
 
 Music app to start recommendations?
