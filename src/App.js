@@ -9,6 +9,8 @@ function App(props) {
                         InitialData[3]];
   const [selectedValue, setSelectedValue] = useState("");
   const [questionsValue, setQuestionsValue] = useState(questionsArray);
+  const [answersValue, setAnswersValue] = useState(false);
+
   function onChange(e) {
     setSelectedValue(e.target.value);
   }
@@ -22,25 +24,37 @@ function App(props) {
 
   function formSubmit(event) {
     event.preventDefault();
-    const choice = InitialData.find(q => q.questionText === selectedValue);
-    setQuestionsValue(choice.nextChoices);
-    var radio = document.querySelector('input[type=radio][name=question]:checked');
-    if(radio) { radio.checked = false; }
+    const choice = questionsValue.find(q => q.questionText === selectedValue);
+    if(choice.nextChoices.recommendation) {
+      setAnswersValue(choice.nextChoices);
+    } else {
+      setQuestionsValue(choice.nextChoices);
+      var radio = document.querySelector('input[type=radio][name=question]:checked');
+      if(radio) { radio.checked = false; }
+    }
   }
 
-  return (
-    <div>
-      <form onSubmit={formSubmit}>
-        <Question question={questionsValue[0].questionText} onChange={onChange} />
-        <Question question={questionsValue[1].questionText} onChange={onChange} />
-        <Question question={questionsValue[2].questionText} onChange={onChange} />
-        <Question question={questionsValue[3].questionText} onChange={onChange} />
-        <button type="submit">Submit</button>
-        <button onClick={resetForm}>Reset</button>
-      </form>
-        Selected value is {selectedValue}
-    </div>
-  );
+  if(answersValue) {
+    return(
+      <div>
+        <img src={answersValue.imageUrl} />
+        You should try {answersValue.recommendation}
+      </div>
+    )
+  } else {
+    return (
+      <div>
+        <form onSubmit={formSubmit}>
+          <Question imageUrl={questionsValue[0].imageUrl} question={questionsValue[0].questionText} onChange={onChange} />
+          <Question imageUrl={questionsValue[1].imageUrl} question={questionsValue[1].questionText} onChange={onChange} />
+          <Question imageUrl={questionsValue[2].imageUrl} question={questionsValue[2].questionText} onChange={onChange} />
+          <Question imageUrl={questionsValue[3].imageUrl} question={questionsValue[3].questionText} onChange={onChange} />
+          <button type="submit">Submit</button>
+          <button onClick={resetForm}>Reset</button>
+        </form>
+      </div>
+    );
+  }
 }
 
 export default App;

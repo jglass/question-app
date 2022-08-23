@@ -48,22 +48,38 @@ const InitialData = [
     nextChoices: [
         { questionValue: "Question E",
         questionText: "Beatles",
+        deezerId: 1,
+        imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/895c65537c74c2014b459f73e84bccb0/250x250-000000-80-0-0.jpg",
         nextChoices: {
+          imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/10d7d8de4594ca9af1b2d39f4e255d7d/250x250-000000-80-0-0.jpg",
+          deezerId: 1700,
           recommendation: "Wilco",
         }},
           { questionValue: "Question F",
           questionText: "Pink Floyd",
+          deezerId: 860,
+          imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/b4f3b167b3ea91f2fe43bf4bae7cc272/250x250-000000-80-0-0.jpg",
           nextChoices: {
+            imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/c394076d4cd4ec531c63f7608ead5bea/250x250-000000-80-0-0.jpg",
+            deezerId: 4056,
             recommendation: "Primus",
           }},
           { questionValue: "Question G",
           questionText: "Rolling Stones",
+          imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/2ceac184bc846327f60c5b0d4247cc7a/250x250-000000-80-0-0.jpg",
+          deezerId: 11,
           nextChoices: {
+            imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/238f5524a401dfdd5cac685f0f7989bd/250x250-000000-80-0-0.jpg",
+            deezerId: 182,
             recommendation: "Red Hot Chili Peppers",
           }},
           { questionValue: "Question H",
           questionText: "The Who",
+          imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/10be0179e16142c5c770105568401531/250x250-000000-80-0-0.jpg",
+          deezerId: 817,
           nextChoices: {
+            imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/9508c1217e880b52703a525d1bd5250c/250x250-000000-80-0-0.jpg",
+            deezerId: 399,
             recommendation: "Radiohead",
           }},
        ]
