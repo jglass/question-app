@@ -77,3 +77,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Identify pic of artist?
 
 Music app to start recommendations?
+https://rapidapi.com/deezerdevs/api/deezer-1/

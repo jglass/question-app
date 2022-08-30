@@ -11,27 +11,21 @@ function App(props) {
   const [questionsValue, setQuestionsValue] = useState(questionsArray);
   const [answersValue, setAnswersValue] = useState(false);
 
-  function onChange(e) {
-    setSelectedValue(e.target.value);
+  function onChange(value) {
+    const choice = questionsValue.find(q => q.questionText === value);
+
+    if(choice.nextChoices.recommendation) {
+      setAnswersValue(choice.nextChoices);
+    } else {
+      setQuestionsValue(choice.nextChoices);
+    }
+
+    setSelectedValue(value);
   }
 
   function resetForm(e) {
     setSelectedValue("");
     setQuestionsValue(questionsArray);
-    var radio = document.querySelector('input[type=radio][name=question]:checked');
-    if(radio) { radio.checked = false; }
-  }
-
-  function formSubmit(event) {
-    event.preventDefault();
-    const choice = questionsValue.find(q => q.questionText === selectedValue);
-    if(choice.nextChoices.recommendation) {
-      setAnswersValue(choice.nextChoices);
-    } else {
-      setQuestionsValue(choice.nextChoices);
-      var radio = document.querySelector('input[type=radio][name=question]:checked');
-      if(radio) { radio.checked = false; }
-    }
   }
 
   if(answersValue) {
@@ -44,12 +38,11 @@ function App(props) {
   } else {
     return (
       <div>
-        <form onSubmit={formSubmit}>
+        <form>
           <Question imageUrl={questionsValue[0].imageUrl} question={questionsValue[0].questionText} onChange={onChange} />
           <Question imageUrl={questionsValue[1].imageUrl} question={questionsValue[1].questionText} onChange={onChange} />
           <Question imageUrl={questionsValue[2].imageUrl} question={questionsValue[2].questionText} onChange={onChange} />
           <Question imageUrl={questionsValue[3].imageUrl} question={questionsValue[3].questionText} onChange={onChange} />
-          <button type="submit">Submit</button>
           <button onClick={resetForm}>Reset</button>
         </form>
       </div>
