@@ -1,7 +1,7 @@
 function Question(props) {
   return(
     <a href="#" onClick={() => { props.onChange(props.question) } } >
-      <div>
+      <li>
         <img src={props.imageUrl}
              height="125"
              width="125"
@@ -9,7 +9,7 @@ function Question(props) {
         <label>
          {props.question}
         </label>
-      </div>
+      </li>
     </a>
   );
 }
