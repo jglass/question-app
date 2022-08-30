@@ -1,3 +1,5 @@
+import './Question.css';
+
 function Question(props) {
   return(
     <a href="#" onClick={() => { props.onChange(props.question) } } >

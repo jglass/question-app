@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Question from './Question';
 import InitialData from './InitialData';
+import './App.css';
 
 function App(props) {
   let questionsArray = [InitialData[0],
@@ -33,11 +34,12 @@ function App(props) {
       <div>
         <img src={answersValue.imageUrl} />
         You should try {answersValue.recommendation}
+        <button onClick={resetForm}>Start Over</button>
       </div>
     )
   } else {
     return (
-      <div>
+      <div className="App">
         <ul>
           <Question imageUrl={questionsValue[0].imageUrl} question={questionsValue[0].questionText} onChange={onChange} />
           <Question imageUrl={questionsValue[1].imageUrl} question={questionsValue[1].questionText} onChange={onChange} />
