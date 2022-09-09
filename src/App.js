@@ -4,7 +4,7 @@ import InitialData from './InitialData';
 import './App.css';
 
 function App(props) {
-  let questionsArray = [InitialData[0],
+  const questionsArray = [InitialData[0],
                         InitialData[1],
                         InitialData[2],
                         InitialData[3]];
@@ -27,6 +27,7 @@ function App(props) {
   function resetForm(e) {
     setSelectedValue("");
     setQuestionsValue(questionsArray);
+    setAnswersValue(false);
   }
 
   if(answersValue) {
