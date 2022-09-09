@@ -70,11 +70,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ### TODO
-- Debug start over button
-- Styling
+- Add tests
+- Finish Styling
 - Collage of artist and album covers
 - Add more data or get from API
 - Identify pic of artist?
+- A/B test (eg image only vs text)
+- Gather user data? Like age?
 
 Music app to start recommendations?
 https://rapidapi.com/deezerdevs/api/deezer-1/
