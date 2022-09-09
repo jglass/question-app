@@ -17,6 +17,15 @@ img {
 .questions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  max-width: 595px;
+  min-width: 364px;
+  padding-inline-start: 0;
+}
+
+figure {
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
 }
 
 .App {
