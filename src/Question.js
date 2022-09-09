@@ -8,10 +8,11 @@ function Question(props) {
              height="125"
              width="125"
              value={props.question} />
-        <label>
-         {props.question}
-        </label>
+
       </li>
+      <label>
+       {props.question}
+      </label>
     </a>
   );
 }

@@ -41,7 +41,7 @@ function App(props) {
   } else {
     return (
       <div className="App">
-        <ul>
+        <ul className="questions">
           <Question imageUrl={questionsValue[0].imageUrl} question={questionsValue[0].questionText} onChange={onChange} />
           <Question imageUrl={questionsValue[1].imageUrl} question={questionsValue[1].questionText} onChange={onChange} />
           <Question imageUrl={questionsValue[2].imageUrl} question={questionsValue[2].questionText} onChange={onChange} />
