@@ -12,15 +12,15 @@ a {
 
 img {
   border: 2px solid black;
+  width: 100%;
 }
 
 .questions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 595px;
-  min-width: 364px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding-inline-start: 0;
+  max-width: 300px;
+  align-items: center;
 }
 
 figure {

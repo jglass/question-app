@@ -6,8 +6,6 @@ function Question(props) {
       <li>
         <figure>
           <img src={props.imageUrl}
-               height="125"
-               width="125"
                value={props.question} />
           <figcaption>{props.question}</figcaption>
         </figure>
