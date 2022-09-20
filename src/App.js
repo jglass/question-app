@@ -32,7 +32,7 @@ function App(props) {
 
   if(answersValue) {
     return(
-      <div>
+      <div id="App">
         <img src={answersValue.imageUrl} />
         You should try {answersValue.recommendation}
         <button onClick={resetForm}>Start Over</button>
@@ -40,7 +40,7 @@ function App(props) {
     )
   } else {
     return (
-      <div className="App">
+      <div className="App" id="App">
         <ul className="questions">
           <Question imageUrl={questionsValue[0].imageUrl} question={questionsValue[0].questionText} onChange={onChange} />
           <Question imageUrl={questionsValue[1].imageUrl} question={questionsValue[1].questionText} onChange={onChange} />
