@@ -4,7 +4,9 @@ import './Question.css';
 
 function Question(props) {
   return(
-    <a href="#" onClick={() => { props.onChange(props.question) } } >
+    <a href="#"
+      onClick={() => { props.onChange(props.question) } }
+      data-testid={props.testId} >
       <li>
         <figure>
           <img src={props.imageUrl}

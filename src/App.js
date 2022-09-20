@@ -42,10 +42,22 @@ function App(props) {
     return (
       <div className="App" id="App">
         <ul className="questions">
-          <Question imageUrl={questionsValue[0].imageUrl} question={questionsValue[0].questionText} onChange={onChange} />
-          <Question imageUrl={questionsValue[1].imageUrl} question={questionsValue[1].questionText} onChange={onChange} />
-          <Question imageUrl={questionsValue[2].imageUrl} question={questionsValue[2].questionText} onChange={onChange} />
-          <Question imageUrl={questionsValue[3].imageUrl} question={questionsValue[3].questionText} onChange={onChange} />
+          <Question imageUrl={questionsValue[0].imageUrl}
+                    question={questionsValue[0].questionText}
+                    onChange={onChange}
+                    testId={questionsValue[0].questionId} />
+          <Question imageUrl={questionsValue[1].imageUrl}
+                    question={questionsValue[1].questionText}
+                    onChange={onChange}
+                    testId={questionsValue[1].questionId} />
+          <Question imageUrl={questionsValue[2].imageUrl}
+                    question={questionsValue[2].questionText}
+                    onChange={onChange}
+                    testId={questionsValue[2].questionId} />
+          <Question imageUrl={questionsValue[3].imageUrl}
+                    question={questionsValue[3].questionText}
+                    onChange={onChange}
+                    testId={questionsValue[3].questionId} />
         </ul>
           <button onClick={resetForm}>Reset</button>
       </div>
