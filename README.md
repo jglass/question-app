@@ -70,10 +70,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ### TODO
-- Finish tests
-- Finish Styling
-- Collage of artist and album covers
+- Build Player?
+- Finish testing spotify flow for getting data
 - Add more data or get from API
+- Finish Styling
+- Why is fetch running token request twice?
 - Identify pic of artist?
 - A/B test (eg image only vs text)
 - Gather user data? Like age?
