@@ -4,8 +4,9 @@ import InitialData from './InitialData';
 import './App.css';
 import { Buffer } from 'buffer';
 
-const client_id = 'c673e5065b4d45119c7c7b87a02fda5e';
-const client_secret = '';
+const client_id = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
+const client_secret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
+
 var authOptions = {
   url: 'https://accounts.spotify.com/api/token',
   headers: {
