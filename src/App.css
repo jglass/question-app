@@ -4,7 +4,7 @@ body {
 
 li {
   list-style-type: none;
-  font-size: clamp(1.5rem, 3.5vw, 4rem);
+  font-size: clamp(1rem, 3.5vw, 4rem);
   text-align: center;
 }
 
