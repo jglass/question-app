@@ -58,6 +58,15 @@ function App(props) {
   function onChange(value) {
     const choice = questionsValue.find(q => q.questionText === value);
 
+    postData('https://accounts.spotify.com/api/token', authOptions)
+      .then((data) => {
+        // console.log(data.access_token); // JSON data parsed by `data.json()` call
+        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${choice.artists}&seed_genres=${choice.genre}&seed_tracks=${choice.tracks}&min_popularity=50`, data).
+        then((data) => {
+          console.log(data);
+        });
+      });
+
     if(choice.nextChoices.recommendation) {
       setAnswersValue(choice.nextChoices);
     } else {
@@ -74,14 +83,7 @@ function App(props) {
   }
 
   useEffect(() => {
-    postData('https://accounts.spotify.com/api/token', authOptions)
-      .then((data) => {
-        // console.log(data.access_token); // JSON data parsed by `data.json()` call
-        getData('https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy?market=ES', data).
-        then((data) => {
-          // console.log(data);
-        });
-      });
+
   }, []);
 
   if(answersValue) {
