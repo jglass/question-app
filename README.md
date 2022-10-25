@@ -70,6 +70,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ### TODO
+- Remove Deezer as we go
+- Add to API functionality:
+- Step 1: User picks one genre from a pre-downloaded list of genres (like we do now)
+- List of genres is expanded
+- Step 2: Get random but high popularity artists based on predefined artist and track seeds for that genre
+- Step 3: Show artists, have user pick one
+- Step 4: Top tracks from artist, pick one
+- Step Final: Recommendation (Browse) -> Playlist
+- Step X: Who sang the song?
+- Convert credentials for to Virtual Dom Element
 - Build Player?
 - Finish testing spotify flow for getting data
 - Add more data or get from API
@@ -77,6 +87,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Why is fetch running token request twice?
 - Identify pic of artist?
 - A/B test (eg image only vs text)
+- Eclectic artist quiz (id song based on artist)
+- Rotating Holiday Music for genre
 - Gather user data? Like age?
 
 Music app to start recommendations?
