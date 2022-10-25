@@ -6,11 +6,15 @@ function Question(props) {
   return(
     <a href="#"
       onClick={() => { props.onChange(props.question) } }
-      data-testid={props.testId} >
+      data-testid={props.testId}
+      value={props.question}
+      data-genre={props.genre}
+      data-artists={props.artists}
+      data-tracks={props.tracks} >
       <li>
         <figure>
           <img src={props.imageUrl}
-               value={props.question} />
+               alt={props.question} />
           <figcaption>{props.question}</figcaption>
         </figure>
       </li>

@@ -103,7 +103,10 @@ function App(props) {
                       question={questions.questionText}
                       onChange={onChange}
                       key={questions.questionId}
-                      testId={questions.questionId} />)
+                      testId={questions.questionId}
+                      genre={questions.genre}
+                      artists={questions.artists}
+                      tracks={questions.tracks} />)
           })}
         </ul>
           <button onClick={resetForm}>Reset</button>
