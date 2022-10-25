@@ -50,10 +50,7 @@ async function getData(url = '', opts = {}) {
 }
 
 function App(props) {
-  const questionsArray = [InitialData[0],
-                        InitialData[1],
-                        InitialData[2],
-                        InitialData[3]];
+  const questionsArray = InitialData;
   const [selectedValue, setSelectedValue] = useState("");
   const [questionsValue, setQuestionsValue] = useState(questionsArray);
   const [answersValue, setAnswersValue] = useState(false);
@@ -79,10 +76,10 @@ function App(props) {
   useEffect(() => {
     postData('https://accounts.spotify.com/api/token', authOptions)
       .then((data) => {
-        console.log(data.access_token); // JSON data parsed by `data.json()` call
+        // console.log(data.access_token); // JSON data parsed by `data.json()` call
         getData('https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy?market=ES', data).
         then((data) => {
-          console.log(data);
+          // console.log(data);
         });
       });
   }, []);
@@ -99,22 +96,13 @@ function App(props) {
     return (
       <div className="App" id="App">
         <ul className="questions">
-          <Question imageUrl={questionsValue[0].imageUrl}
-                    question={questionsValue[0].questionText}
-                    onChange={onChange}
-                    testId={questionsValue[0].questionId} />
-          <Question imageUrl={questionsValue[1].imageUrl}
-                    question={questionsValue[1].questionText}
-                    onChange={onChange}
-                    testId={questionsValue[1].questionId} />
-          <Question imageUrl={questionsValue[2].imageUrl}
-                    question={questionsValue[2].questionText}
-                    onChange={onChange}
-                    testId={questionsValue[2].questionId} />
-          <Question imageUrl={questionsValue[3].imageUrl}
-                    question={questionsValue[3].questionText}
-                    onChange={onChange}
-                    testId={questionsValue[3].questionId} />
+          {questionsValue.map((questions) => {
+            return(<Question imageUrl={questions.imageUrl}
+                      question={questions.questionText}
+                      onChange={onChange}
+                      key={questions.questionId}
+                      testId={questions.questionId} />)
+          })}
         </ul>
           <button onClick={resetForm}>Reset</button>
       </div>
