@@ -1,11 +1,15 @@
 const InitialData = [
     { questionId: "Question A",
     questionText: "Reggae",
+    genre: "reggae",
+    artists: "2QsynagSdAqZj3U9HgDzjD%2C0o0rlxlC3ApLWsxFkUjMXc", //0o0rlxlC3ApLWsxFkUjMXc%2C1TsG4AumsMt1Tcq2nHpov9",
+    tracks: "3vS4mbVxt9cOpaxtV2uZNr%2C7aJZxI6TVdIvQSuWxQ4rqp", //%2C5N0lcnJTtKj4wNDvurHige%2C5O4erNlJ74PIF6kGol1ZrC",
     deezerId: 7010,
     imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/1ca0ae3450579ac579bb61dffd1a51fa/250x250-000000-80-0-0.jpg",
     nextChoices: [
         { questionId: "Question E",
         questionText: "Bob Marley",
+        spotifyID: "2QsynagSdAqZj3U9HgDzjD",
         imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/cc3b1efce691fc86644748dba8affa21/250x250-000000-80-0-0.jpg",
         deezerId: 4803754,
         nextChoices: {
@@ -15,6 +19,7 @@ const InitialData = [
         }},
         { questionId: "Question F",
         questionText: "Ziggy Marley",
+        spotifyID: "0o0rlxlC3ApLWsxFkUjMXc",
         imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/d9dcaa9371cc2d08d9152a27f3e86fd9/250x250-000000-80-0-0.jpg",
         deezerId: 5995,
         nextChoices: {
@@ -24,6 +29,7 @@ const InitialData = [
         }},
         { questionId: "Question G",
         questionText: "Jimmy Cliff",
+        spotifyID: "3rJ3m1tM6vUgiWLjfV8sRf",
         imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/686b0d6e829a9067ad2d9071d5e2f421/250x250-000000-80-0-0.jpg",
         deezerId: 2425,
         nextChoices: {
@@ -33,6 +39,7 @@ const InitialData = [
         }},
         { questionId: "Question H",
         questionText: "Lee 'Scratch' Perry",
+        spotifyID: "1TsG4AumsMt1Tcq2nHpov9",
         imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/8e36ef73d28e10192c5c103294fff588/250x250-000000-80-0-0.jpg",
         deezerId: 3757,
         nextChoices: {
