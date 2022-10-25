@@ -79,6 +79,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Step 4: Top tracks from artist, pick one
 - Step Final: Recommendation (Browse) -> Playlist
 - Step X: Who sang the song?
+- URL should change when user clicks (and should go to state when user goes to URL)
 - Convert credentials for to Virtual Dom Element
 - Build Player?
 - Finish testing spotify flow for getting data
