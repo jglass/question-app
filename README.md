@@ -70,17 +70,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ### TODO
+"Record Store"
 - Remove Deezer as we go
 - Add to API functionality:
-- Step 1: User picks one genre from a pre-downloaded list of genres (like we do now)
-- List of genres is expanded
-- Step 2: Get random but high popularity artists based on predefined artist and track seeds for that genre
+- ~~Step 1: User picks one genre from a pre-downloaded list of genres (like we do now)~~
+- ~~Step 2: Get random but high popularity artists based on predefined artist and track seeds for that genre~~
 - Step 3: Show artists, have user pick one
 - Step 4: Top tracks from artist, pick one
 - Step Final: Recommendation (Browse) -> Playlist
+- Move API calls to async/await
+- Don't refetch API token  from spotify if not expired
 - Step X: Who sang the song?
 - URL should change when user clicks (and should go to state when user goes to URL)
 - Convert credentials for to Virtual Dom Element
+- Ask user if they want famous or obscure recommendations
 - Build Player?
 - Finish testing spotify flow for getting data
 - Add more data or get from API
