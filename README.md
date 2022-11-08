@@ -75,8 +75,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Add to API functionality:
 - ~~Step 1: User picks one genre from a pre-downloaded list of genres (like we do now)~~
 - ~~Step 2: Get random but high popularity artists based on predefined artist and track seeds for that genre~~
-- Step 3: Show artists, have user pick one
-- Step 4: Top tracks from artist, pick one
+- ~~Step 3: Show artists, have user pick one~~
+- ~~Step 3a: Add preview player (Spotify embed)~~
+- Step 3b: New styles for player
+- Step 4: Add Step 2.5 where user answers Buzzfeed style questions
 - Step Final: Recommendation (Browse) -> Playlist
 - Move API calls to async/await
 - Don't refetch API token  from spotify if not expired
