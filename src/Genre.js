@@ -1,8 +1,15 @@
 import React from 'react';
 import './Question.css';
 
+function Genre(props) {
+  function onChange(value) {
+    const choice = questionsValue.find(q => q.questionText === value);
 
-function Question(props) {
+    setAnswersValue(nextChoices);
+    setQuestionsValue(nextChoices);
+    setSelectedValue(value);
+  }
+
   return(
     <a href="#"
       onClick={() => { props.onChange(props.question) } }
@@ -23,4 +30,4 @@ function Question(props) {
   );
 }
 
-export default Question;
+export default Genre;
