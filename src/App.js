@@ -69,6 +69,7 @@ function App(props) {
               {
                 questionText:  track.artists[0].name,
                 imageUrl: track.album.images[1].url,
+                playerHTML: track.artists[0].id,
               }
             )
           });
@@ -77,27 +78,6 @@ function App(props) {
           setSelectedValue(value);
         });
       });
-
-      // { questionId: "Question E",
-      // questionText: "Bob Marley",
-      // spotifyID: "2QsynagSdAqZj3U9HgDzjD",
-      // imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/cc3b1efce691fc86644748dba8affa21/250x250-000000-80-0-0.jpg",
-      // deezerId: 4803754,
-      // nextChoices: {
-      //   recommendation: "Peter Tosh",
-      //   deezerId: 2326,
-      //   imageUrl: "https://e-cdns-images.dzcdn.net/images/artist/31c0c1dfc699039efb7921adeed33721/250x250-000000-80-0-0.jpg",
-      // }},
-
-
-
-
-    // if(choice.nextChoices.recommendation) {
-    //   setAnswersValue(choice.nextChoices);
-    // } else {
-    //   setQuestionsValue(choice.nextChoices);
-    // }
-
   }
 
   function resetForm(e) {
@@ -126,7 +106,8 @@ function App(props) {
                       testId={questions.questionId}
                       genre={questions.genre}
                       artists={questions.artists}
-                      tracks={questions.tracks} />)
+                      tracks={questions.tracks}
+                      playerHTML={questions.playerHTML}/>)
           })}
         </ul>
           <button onClick={resetForm}>Reset</button>
