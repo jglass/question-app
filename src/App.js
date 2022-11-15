@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Question from './Question';
+import SecondaryQuestion from './SecondaryQuestion';
 import InitialData from './InitialData';
+import SecondaryData from './SecondaryData';
 import './App.css';
 import { Buffer } from 'buffer';
 
@@ -51,18 +53,31 @@ async function getData(url = '', opts = {}) {
 
 function App(props) {
   const questionsArray = InitialData;
+  const [step, setStep] = useState(0);
+  const [choice, setChoice] = useState({});
+  const [targetDancibility, setTargetDancibility] = useState("0.5");
+  const [targetValence, setTargetValence] = useState("0.5");
   const [selectedValue, setSelectedValue] = useState("");
   const [questionsValue, setQuestionsValue] = useState(questionsArray);
-  const [answersValue, setAnswersValue] = useState(false);
   let artistResult, imageResult;
 
   function onChange(value) {
-    const choice = questionsValue.find(q => q.questionText === value);
+    if(step === 0) {
+      setChoice(questionsValue.find(q => q.questionText === value));
+      setStep(step + 1);
+      return false;
+    } else if(step === 1) {
+      setTargetDancibility(value);
+      setStep(step + 1);
+      return false;
+    } else if(step === 2) {
+      setTargetValence(value);
+    }
 
     postData('https://accounts.spotify.com/api/token', authOptions)
       .then((data) => {
         // console.log(data.access_token); // JSON data parsed by `data.json()` call
-        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${choice.artists}&seed_genres=${choice.genre}&seed_tracks=${choice.tracks}&min_popularity=50`, data).
+        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${choice.artists}&seed_genres=${choice.genre}&seed_tracks=${choice.tracks}&target_danceability=${value}&min_popularity=50`, data).
         then((data) => {
           let nextChoices = data.tracks.map((track, indx) => {
             return(
@@ -73,9 +88,9 @@ function App(props) {
               }
             )
           });
-          setAnswersValue(nextChoices);
           setQuestionsValue(nextChoices);
           setSelectedValue(value);
+          setStep(step + 1);
         });
       });
   }
@@ -83,18 +98,9 @@ function App(props) {
   function resetForm(e) {
     setSelectedValue("");
     setQuestionsValue(questionsArray);
-    setAnswersValue(false);
   }
-
-  if(false) {
-    return(
-      <div id="App">
-        <img src={answersValue.imageUrl} />
-        You should try {answersValue.recommendation}
-        <button onClick={resetForm}>Start Over</button>
-      </div>
-    )
-  } else {
+  console.log(step)
+  if (step === 3 || step === 0) {
     return (
       <div className="App" id="App">
         <ul className="questions">
@@ -111,6 +117,23 @@ function App(props) {
           })}
         </ul>
           <button onClick={resetForm}>Reset</button>
+      </div>
+    );
+  } else {
+    return (
+      <div className="App" id="App">
+        <ul className="questions">
+          {SecondaryData[step - 1].questionText}
+          {SecondaryData[step - 1].answers.map((answer) => {
+            return(<SecondaryQuestion
+              answerText={answer.answerText}
+              answerValue={answer.answerValue}
+              onChange={onChange}
+              key={answer.key}
+              testId={answer.key}
+            />);
+          })}
+        </ul>
       </div>
     );
   }

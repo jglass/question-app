@@ -77,9 +77,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - ~~Step 2: Get random but high popularity artists based on predefined artist and track seeds for that genre~~
 - ~~Step 3: Show artists, have user pick one~~
 - ~~Step 3a: Add preview player (Spotify embed)~~
-- Render components based on step (genre, buzzfeed, recommendation)
+- ~~Fix bug with dancibility not getting set~~
+- ~~experiment with max_ and min_ dancibility~~
+- ~~Render components based on step (genre, buzzfeed, recommendation) (buzzfeed is multiple steps)~~
+- Add popularity question
+- Add more questions that don't necessarily correspond 1-1 ("how hippy?")
+- Style Silly questions
+- Add GIFs to silly questions
+- Why is fetch running token request twice? (everything running twice)
 - Step 3b: New styles for player
 - Step 4: Add Step 2.5 where user answers Buzzfeed style questions using new component
+- Brackets?
 - Step Final: Recommendation (Browse) -> Playlist
 - Move API calls to async/await
 - Don't refetch API token  from spotify if not expired
@@ -91,7 +99,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Finish testing spotify flow for getting data
 - Add more data or get from API
 - Finish Styling
-- Why is fetch running token request twice?
 - Identify pic of artist?
 - A/B test (eg image only vs text)
 - Eclectic artist quiz (id song based on artist)
