@@ -77,14 +77,14 @@ function App(props) {
     postData('https://accounts.spotify.com/api/token', authOptions)
       .then((data) => {
         // console.log(data.access_token); // JSON data parsed by `data.json()` call
-        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${choice.artists}&seed_genres=${choice.genre}&seed_tracks=${choice.tracks}&target_danceability=${value}&min_popularity=50`, data).
+        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${choice.artists}&seed_genres=${choice.genre}&seed_tracks=${choice.tracks}&target_danceability=${targetDancibility}&target_valence=${value}&min_popularity=50`, data).
         then((data) => {
           let nextChoices = data.tracks.map((track, indx) => {
             return(
               {
                 questionText:  track.artists[0].name,
                 imageUrl: track.album.images[1].url,
-                playerHTML: track.artists[0].id,
+                trackId: track.id,
               }
             )
           });
@@ -113,7 +113,7 @@ function App(props) {
                       genre={questions.genre}
                       artists={questions.artists}
                       tracks={questions.tracks}
-                      playerHTML={questions.playerHTML}/>)
+                      trackId={questions.trackId}/>)
           })}
         </ul>
           <button onClick={resetForm}>Reset</button>

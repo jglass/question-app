@@ -80,6 +80,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - ~~Fix bug with dancibility not getting set~~
 - ~~experiment with max_ and min_ dancibility~~
 - ~~Render components based on step (genre, buzzfeed, recommendation) (buzzfeed is multiple steps)~~
+- ~~Add valence to spotify query~~
+- Remove images from results
+- Investigate experimenting with different seeds based on question answers
 - Add popularity question
 - Add more questions that don't necessarily correspond 1-1 ("how hippy?")
 - Style Silly questions
@@ -87,6 +90,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Why is fetch running token request twice? (everything running twice)
 - Step 3b: New styles for player
 - Step 4: Add Step 2.5 where user answers Buzzfeed style questions using new component
+- Can we consolidate players into one?
 - Brackets?
 - Step Final: Recommendation (Browse) -> Playlist
 - Move API calls to async/await

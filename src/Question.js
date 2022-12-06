@@ -17,8 +17,8 @@ function Question(props) {
                alt={props.question} />
           <figcaption>{props.question}</figcaption>
         </figure>
-        {props.playerHTML &&
-          <iframe width="100%" height="380" title="Spotify Embed: Signal" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" src={`https://open.spotify.com/embed/artist/${props.playerHTML}?utm_source=oembed`}></iframe>
+        {props.trackId &&
+          <iframe style={{ borderRadius: "12px" }} src={`https://open.spotify.com/embed/track/${props.trackId}`} width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         }
       </li>
     </a>

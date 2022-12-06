@@ -1,0 +1,843 @@
+{
+  "tracks" : [ {
+    "album" : {
+      "album_type" : "COMPILATION",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3RGLhK1IP9jnYFH4BRFJBS"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3RGLhK1IP9jnYFH4BRFJBS",
+        "id" : "3RGLhK1IP9jnYFH4BRFJBS",
+        "name" : "The Clash",
+        "type" : "artist",
+        "uri" : "spotify:artist:3RGLhK1IP9jnYFH4BRFJBS"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/3Zkggi5I9uH5x94DuN6u1S"
+      },
+      "href" : "https://api.spotify.com/v1/albums/3Zkggi5I9uH5x94DuN6u1S",
+      "id" : "3Zkggi5I9uH5x94DuN6u1S",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b27357f627f712e7060d287dd732",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e0257f627f712e7060d287dd732",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d0000485157f627f712e7060d287dd732",
+        "width" : 64
+      } ],
+      "name" : "Hits Back",
+      "release_date" : "2013-08-26",
+      "release_date_precision" : "day",
+      "total_tracks" : 32,
+      "type" : "album",
+      "uri" : "spotify:album:3Zkggi5I9uH5x94DuN6u1S"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3RGLhK1IP9jnYFH4BRFJBS"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3RGLhK1IP9jnYFH4BRFJBS",
+      "id" : "3RGLhK1IP9jnYFH4BRFJBS",
+      "name" : "The Clash",
+      "type" : "artist",
+      "uri" : "spotify:artist:3RGLhK1IP9jnYFH4BRFJBS"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 188240,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "GBARL1200670"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/3v8PlUFGQQDBIk1J86waCo"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/3v8PlUFGQQDBIk1J86waCo",
+    "id" : "3v8PlUFGQQDBIk1J86waCo",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Should I Stay or Should I Go - Remastered",
+    "popularity" : 63,
+    "preview_url" : "https://p.scdn.co/mp3-preview/6e466534255c8016ea677bd25cf6af5640cfdbc1?cid=c673e5065b4d45119c7c7b87a02fda5e",
+    "track_number" : 23,
+    "type" : "track",
+    "uri" : "spotify:track:3v8PlUFGQQDBIk1J86waCo"
+  }, {
+    "album" : {
+      "album_type" : "ALBUM",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/58alCatewkjNm9IM1Ucj67"
+      },
+      "href" : "https://api.spotify.com/v1/albums/58alCatewkjNm9IM1Ucj67",
+      "id" : "58alCatewkjNm9IM1Ucj67",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273056e90910cbaf5c5b892aeba",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02056e90910cbaf5c5b892aeba",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851056e90910cbaf5c5b892aeba",
+        "width" : 64
+      } ],
+      "name" : "The Game (2011 Remaster)",
+      "release_date" : "1980-06-27",
+      "release_date_precision" : "day",
+      "total_tracks" : 10,
+      "type" : "album",
+      "uri" : "spotify:album:58alCatewkjNm9IM1Ucj67"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+      "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+      "name" : "Queen",
+      "type" : "artist",
+      "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 214653,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "GBUM71029605"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/5vdp5UmvTsnMEMESIF2Ym7"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/5vdp5UmvTsnMEMESIF2Ym7",
+    "id" : "5vdp5UmvTsnMEMESIF2Ym7",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Another One Bites The Dust - Remastered 2011",
+    "popularity" : 81,
+    "preview_url" : null,
+    "track_number" : 3,
+    "type" : "track",
+    "uri" : "spotify:track:5vdp5UmvTsnMEMESIF2Ym7"
+  }, {
+    "album" : {
+      "album_type" : "ALBUM",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0nJUwPwC9Ti4vvuJ0q3MfT"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0nJUwPwC9Ti4vvuJ0q3MfT",
+        "id" : "0nJUwPwC9Ti4vvuJ0q3MfT",
+        "name" : "John Prine",
+        "type" : "artist",
+        "uri" : "spotify:artist:0nJUwPwC9Ti4vvuJ0q3MfT"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1fW0Oyx3p2kVzo2INfW7Lb"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1fW0Oyx3p2kVzo2INfW7Lb",
+      "id" : "1fW0Oyx3p2kVzo2INfW7Lb",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2735b409000ae3208d0b0c8bb5e",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e025b409000ae3208d0b0c8bb5e",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048515b409000ae3208d0b0c8bb5e",
+        "width" : 64
+      } ],
+      "name" : "Bruised Orange",
+      "release_date" : "1978",
+      "release_date_precision" : "year",
+      "total_tracks" : 10,
+      "type" : "album",
+      "uri" : "spotify:album:1fW0Oyx3p2kVzo2INfW7Lb"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0nJUwPwC9Ti4vvuJ0q3MfT"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0nJUwPwC9Ti4vvuJ0q3MfT",
+      "id" : "0nJUwPwC9Ti4vvuJ0q3MfT",
+      "name" : "John Prine",
+      "type" : "artist",
+      "uri" : "spotify:artist:0nJUwPwC9Ti4vvuJ0q3MfT"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 194706,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USAS10100041"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/4qA8M5hJn45rtFyWH5Ixar"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/4qA8M5hJn45rtFyWH5Ixar",
+    "id" : "4qA8M5hJn45rtFyWH5Ixar",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Fish and Whistle",
+    "popularity" : 53,
+    "preview_url" : "https://p.scdn.co/mp3-preview/4d996aa17a0940dcafe2989894f882389dc586ab?cid=c673e5065b4d45119c7c7b87a02fda5e",
+    "track_number" : 1,
+    "type" : "track",
+    "uri" : "spotify:track:4qA8M5hJn45rtFyWH5Ixar"
+  }, {
+    "album" : {
+      "album_type" : "ALBUM",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7bPU7cvfoD20ixGD9Qnqki"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7bPU7cvfoD20ixGD9Qnqki",
+        "id" : "7bPU7cvfoD20ixGD9Qnqki",
+        "name" : "Stealers Wheel",
+        "type" : "artist",
+        "uri" : "spotify:artist:7bPU7cvfoD20ixGD9Qnqki"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5ApN9lqru1t3Xh1IaEGTll"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5ApN9lqru1t3Xh1IaEGTll",
+      "id" : "5ApN9lqru1t3Xh1IaEGTll",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273a5ce236c22035a02cf87d4de",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02a5ce236c22035a02cf87d4de",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851a5ce236c22035a02cf87d4de",
+        "width" : 64
+      } ],
+      "name" : "Stealers Wheel",
+      "release_date" : "1972-01-01",
+      "release_date_precision" : "day",
+      "total_tracks" : 10,
+      "type" : "album",
+      "uri" : "spotify:album:5ApN9lqru1t3Xh1IaEGTll"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7bPU7cvfoD20ixGD9Qnqki"
+      },
+      "href" : "https://api.spotify.com/v1/artists/7bPU7cvfoD20ixGD9Qnqki",
+      "id" : "7bPU7cvfoD20ixGD9Qnqki",
+      "name" : "Stealers Wheel",
+      "type" : "artist",
+      "uri" : "spotify:artist:7bPU7cvfoD20ixGD9Qnqki"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 208946,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "GBAAM7200002"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/3Vby4nGmtbDo7HDJamOWkT"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/3Vby4nGmtbDo7HDJamOWkT",
+    "id" : "3Vby4nGmtbDo7HDJamOWkT",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Stuck In The Middle With You",
+    "popularity" : 77,
+    "preview_url" : null,
+    "track_number" : 2,
+    "type" : "track",
+    "uri" : "spotify:track:3Vby4nGmtbDo7HDJamOWkT"
+  }, {
+    "album" : {
+      "album_type" : "ALBUM",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0K1q0nXQ8is36PzOKAMbNe"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0K1q0nXQ8is36PzOKAMbNe",
+        "id" : "0K1q0nXQ8is36PzOKAMbNe",
+        "name" : "Spoon",
+        "type" : "artist",
+        "uri" : "spotify:artist:0K1q0nXQ8is36PzOKAMbNe"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/4sjSsxnmBlzxgZ9HGkHDsk"
+      },
+      "href" : "https://api.spotify.com/v1/albums/4sjSsxnmBlzxgZ9HGkHDsk",
+      "id" : "4sjSsxnmBlzxgZ9HGkHDsk",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2734ca9589ef159f979a3334b72",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e024ca9589ef159f979a3334b72",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048514ca9589ef159f979a3334b72",
+        "width" : 64
+      } ],
+      "name" : "Gimme Fiction (Deluxe Edition)",
+      "release_date" : "2005",
+      "release_date_precision" : "year",
+      "total_tracks" : 23,
+      "type" : "album",
+      "uri" : "spotify:album:4sjSsxnmBlzxgZ9HGkHDsk"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0K1q0nXQ8is36PzOKAMbNe"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0K1q0nXQ8is36PzOKAMbNe",
+      "id" : "0K1q0nXQ8is36PzOKAMbNe",
+      "name" : "Spoon",
+      "type" : "artist",
+      "uri" : "spotify:artist:0K1q0nXQ8is36PzOKAMbNe"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 235560,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USMRG1556507"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/4k15blneKWudA2gBmlWFIW"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/4k15blneKWudA2gBmlWFIW",
+    "id" : "4k15blneKWudA2gBmlWFIW",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "I Summon You",
+    "popularity" : 50,
+    "preview_url" : "https://p.scdn.co/mp3-preview/0343023d23205b98e28910c8888ac82006a4d65d?cid=c673e5065b4d45119c7c7b87a02fda5e",
+    "track_number" : 7,
+    "type" : "track",
+    "uri" : "spotify:track:4k15blneKWudA2gBmlWFIW"
+  }, {
+    "album" : {
+      "album_type" : "COMPILATION",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/43ZHCT0cAZBISjO8DG9PnE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/43ZHCT0cAZBISjO8DG9PnE",
+        "id" : "43ZHCT0cAZBISjO8DG9PnE",
+        "name" : "Elvis Presley",
+        "type" : "artist",
+        "uri" : "spotify:artist:43ZHCT0cAZBISjO8DG9PnE"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0QVoYzGd1p8Z3ohEaM0lsc"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0QVoYzGd1p8Z3ohEaM0lsc",
+      "id" : "0QVoYzGd1p8Z3ohEaM0lsc",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273a0b8a1ce10fddbba6879262e",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02a0b8a1ce10fddbba6879262e",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851a0b8a1ce10fddbba6879262e",
+        "width" : 64
+      } ],
+      "name" : "Elvis 30 #1 Hits",
+      "release_date" : "2002-09-24",
+      "release_date_precision" : "day",
+      "total_tracks" : 31,
+      "type" : "album",
+      "uri" : "spotify:album:0QVoYzGd1p8Z3ohEaM0lsc"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/43ZHCT0cAZBISjO8DG9PnE"
+      },
+      "href" : "https://api.spotify.com/v1/artists/43ZHCT0cAZBISjO8DG9PnE",
+      "id" : "43ZHCT0cAZBISjO8DG9PnE",
+      "name" : "Elvis Presley",
+      "type" : "artist",
+      "uri" : "spotify:artist:43ZHCT0cAZBISjO8DG9PnE"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 155333,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USRC10200071"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/6pyex9B1kBoRIuabBAc4m8"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/6pyex9B1kBoRIuabBAc4m8",
+    "id" : "6pyex9B1kBoRIuabBAc4m8",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Jailhouse Rock",
+    "popularity" : 56,
+    "preview_url" : "https://p.scdn.co/mp3-preview/5f40f40d382a38a39c4a91a34feac34f1c57f6e0?cid=c673e5065b4d45119c7c7b87a02fda5e",
+    "track_number" : 8,
+    "type" : "track",
+    "uri" : "spotify:track:6pyex9B1kBoRIuabBAc4m8"
+  }, {
+    "album" : {
+      "album_type" : "ALBUM",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3WrFJ7ztbogyGnTHbHJFl2",
+        "id" : "3WrFJ7ztbogyGnTHbHJFl2",
+        "name" : "The Beatles",
+        "type" : "artist",
+        "uri" : "spotify:artist:3WrFJ7ztbogyGnTHbHJFl2"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1klALx0u4AavZNEvC4LrTL"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1klALx0u4AavZNEvC4LrTL",
+      "id" : "1klALx0u4AavZNEvC4LrTL",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2734ce8b4e42588bf18182a1ad2",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e024ce8b4e42588bf18182a1ad2",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048514ce8b4e42588bf18182a1ad2",
+        "width" : 64
+      } ],
+      "name" : "The Beatles (Remastered)",
+      "release_date" : "1968-11-22",
+      "release_date_precision" : "day",
+      "total_tracks" : 30,
+      "type" : "album",
+      "uri" : "spotify:album:1klALx0u4AavZNEvC4LrTL"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3WrFJ7ztbogyGnTHbHJFl2",
+      "id" : "3WrFJ7ztbogyGnTHbHJFl2",
+      "name" : "The Beatles",
+      "type" : "artist",
+      "uri" : "spotify:artist:3WrFJ7ztbogyGnTHbHJFl2"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 188960,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "GBAYE0601647"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/1gFNm7cXfG1vSMcxPpSxec"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/1gFNm7cXfG1vSMcxPpSxec",
+    "id" : "1gFNm7cXfG1vSMcxPpSxec",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Ob-La-Di, Ob-La-Da - Remastered 2009",
+    "popularity" : 69,
+    "preview_url" : null,
+    "track_number" : 4,
+    "type" : "track",
+    "uri" : "spotify:track:1gFNm7cXfG1vSMcxPpSxec"
+  }, {
+    "album" : {
+      "album_type" : "ALBUM",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3RGLhK1IP9jnYFH4BRFJBS"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3RGLhK1IP9jnYFH4BRFJBS",
+        "id" : "3RGLhK1IP9jnYFH4BRFJBS",
+        "name" : "The Clash",
+        "type" : "artist",
+        "uri" : "spotify:artist:3RGLhK1IP9jnYFH4BRFJBS"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1ZH5g1RDq3GY1OvyD0w0s2"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1ZH5g1RDq3GY1OvyD0w0s2",
+      "id" : "1ZH5g1RDq3GY1OvyD0w0s2",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b27325a4df452a3c42ccc2e9288b",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e0225a4df452a3c42ccc2e9288b",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d0000485125a4df452a3c42ccc2e9288b",
+        "width" : 64
+      } ],
+      "name" : "Combat Rock (Remastered)",
+      "release_date" : "1982",
+      "release_date_precision" : "year",
+      "total_tracks" : 12,
+      "type" : "album",
+      "uri" : "spotify:album:1ZH5g1RDq3GY1OvyD0w0s2"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3RGLhK1IP9jnYFH4BRFJBS"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3RGLhK1IP9jnYFH4BRFJBS",
+      "id" : "3RGLhK1IP9jnYFH4BRFJBS",
+      "name" : "The Clash",
+      "type" : "artist",
+      "uri" : "spotify:artist:3RGLhK1IP9jnYFH4BRFJBS"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 222426,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "GBARL1200671"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/56KqaFSGTb7ifpt16t5Y1N"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/56KqaFSGTb7ifpt16t5Y1N",
+    "id" : "56KqaFSGTb7ifpt16t5Y1N",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Rock the Casbah - Remastered",
+    "popularity" : 72,
+    "preview_url" : "https://p.scdn.co/mp3-preview/bdf46cb32073a61981d1d5134e33e37a82f7346b?cid=c673e5065b4d45119c7c7b87a02fda5e",
+    "track_number" : 4,
+    "type" : "track",
+    "uri" : "spotify:track:56KqaFSGTb7ifpt16t5Y1N"
+  }, {
+    "album" : {
+      "album_type" : "ALBUM",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3IYUhFvPQItj6xySrBmZkd"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3IYUhFvPQItj6xySrBmZkd",
+        "id" : "3IYUhFvPQItj6xySrBmZkd",
+        "name" : "Creedence Clearwater Revival",
+        "type" : "artist",
+        "uri" : "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/31q47gQszFt0CddSyMksgO"
+      },
+      "href" : "https://api.spotify.com/v1/albums/31q47gQszFt0CddSyMksgO",
+      "id" : "31q47gQszFt0CddSyMksgO",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2739f39192f9f8ca1c90847b3e5",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e029f39192f9f8ca1c90847b3e5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048519f39192f9f8ca1c90847b3e5",
+        "width" : 64
+      } ],
+      "name" : "Willy And The Poor Boys (Expanded Edition)",
+      "release_date" : "1969-11-02",
+      "release_date_precision" : "day",
+      "total_tracks" : 13,
+      "type" : "album",
+      "uri" : "spotify:album:31q47gQszFt0CddSyMksgO"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3IYUhFvPQItj6xySrBmZkd"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3IYUhFvPQItj6xySrBmZkd",
+      "id" : "3IYUhFvPQItj6xySrBmZkd",
+      "name" : "Creedence Clearwater Revival",
+      "type" : "artist",
+      "uri" : "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 166280,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USC4R0817613"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/2gE95JskwQ1pCACTpGe1Db"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/2gE95JskwQ1pCACTpGe1Db",
+    "id" : "2gE95JskwQ1pCACTpGe1Db",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Down On The Corner",
+    "popularity" : 72,
+    "preview_url" : null,
+    "track_number" : 1,
+    "type" : "track",
+    "uri" : "spotify:track:2gE95JskwQ1pCACTpGe1Db"
+  }, {
+    "album" : {
+      "album_type" : "ALBUM",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2QoU3awHVdcHS8LrZEKvSM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2QoU3awHVdcHS8LrZEKvSM",
+        "id" : "2QoU3awHVdcHS8LrZEKvSM",
+        "name" : "Wilco",
+        "type" : "artist",
+        "uri" : "spotify:artist:2QoU3awHVdcHS8LrZEKvSM"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1Wjheru5k9DMQduRIasAyL"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1Wjheru5k9DMQduRIasAyL",
+      "id" : "1Wjheru5k9DMQduRIasAyL",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2739a7bb9b15a61a53b482be4ae",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e029a7bb9b15a61a53b482be4ae",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048519a7bb9b15a61a53b482be4ae",
+        "width" : 64
+      } ],
+      "name" : "Schmilco",
+      "release_date" : "2016-09-06",
+      "release_date_precision" : "day",
+      "total_tracks" : 12,
+      "type" : "album",
+      "uri" : "spotify:album:1Wjheru5k9DMQduRIasAyL"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2QoU3awHVdcHS8LrZEKvSM"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2QoU3awHVdcHS8LrZEKvSM",
+      "id" : "2QoU3awHVdcHS8LrZEKvSM",
+      "name" : "Wilco",
+      "type" : "artist",
+      "uri" : "spotify:artist:2QoU3awHVdcHS8LrZEKvSM"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 175946,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USEP41606002"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/41Kl6LI2iFiT3I2IvXMsFT"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/41Kl6LI2iFiT3I2IvXMsFT",
+    "id" : "41Kl6LI2iFiT3I2IvXMsFT",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "If I Ever Was a Child",
+    "popularity" : 54,
+    "preview_url" : "https://p.scdn.co/mp3-preview/0edeed11aa9400a2eed0d149a7ac633fbcc5a0a7?cid=c673e5065b4d45119c7c7b87a02fda5e",
+    "track_number" : 2,
+    "type" : "track",
+    "uri" : "spotify:track:41Kl6LI2iFiT3I2IvXMsFT"
+  }, {
+    "album" : {
+      "album_type" : "ALBUM",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2x9SpqnPi8rlE9pjHBwmSC"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2x9SpqnPi8rlE9pjHBwmSC",
+        "id" : "2x9SpqnPi8rlE9pjHBwmSC",
+        "name" : "Talking Heads",
+        "type" : "artist",
+        "uri" : "spotify:artist:2x9SpqnPi8rlE9pjHBwmSC"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5dVZpNJraoqCo3BssinMoo"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5dVZpNJraoqCo3BssinMoo",
+      "id" : "5dVZpNJraoqCo3BssinMoo",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2738365f74aa622b1b86962c8dd",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e028365f74aa622b1b86962c8dd",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048518365f74aa622b1b86962c8dd",
+        "width" : 64
+      } ],
+      "name" : "Fear of Music (Deluxe Version)",
+      "release_date" : "1979-08-03",
+      "release_date_precision" : "day",
+      "total_tracks" : 15,
+      "type" : "album",
+      "uri" : "spotify:album:5dVZpNJraoqCo3BssinMoo"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2x9SpqnPi8rlE9pjHBwmSC"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2x9SpqnPi8rlE9pjHBwmSC",
+      "id" : "2x9SpqnPi8rlE9pjHBwmSC",
+      "name" : "Talking Heads",
+      "type" : "artist",
+      "uri" : "spotify:artist:2x9SpqnPi8rlE9pjHBwmSC"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 221320,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USWB10502845"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/7CqleiaEqHVazV19P532X9"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/7CqleiaEqHVazV19P532X9",
+    "id" : "7CqleiaEqHVazV19P532X9",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "Life During Wartime - 2005 Remaster",
+    "popularity" : 59,
+    "preview_url" : "https://p.scdn.co/mp3-preview/6caa68535139d859ec0b8186bbc117df7904f254?cid=c673e5065b4d45119c7c7b87a02fda5e",
+    "track_number" : 5,
+    "type" : "track",
+    "uri" : "spotify:track:7CqleiaEqHVazV19P532X9"
+  }, {
+    "album" : {
+      "album_type" : "ALBUM",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe"
+        },
+        "href" : "https://api.spotify.com/v1/artists/22bE4uQ6baNwSHPVcDxLCe",
+        "id" : "22bE4uQ6baNwSHPVcDxLCe",
+        "name" : "The Rolling Stones",
+        "type" : "artist",
+        "uri" : "spotify:artist:22bE4uQ6baNwSHPVcDxLCe"
+      } ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2Q5MwpTmtjscaS34mJFXQQ"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2Q5MwpTmtjscaS34mJFXQQ",
+      "id" : "2Q5MwpTmtjscaS34mJFXQQ",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b27305c5be85b64eaff732f7cb0b",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e0205c5be85b64eaff732f7cb0b",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d0000485105c5be85b64eaff732f7cb0b",
+        "width" : 64
+      } ],
+      "name" : "Out Of Our Heads",
+      "release_date" : "1965-07-30",
+      "release_date_precision" : "day",
+      "total_tracks" : 12,
+      "type" : "album",
+      "uri" : "spotify:album:2Q5MwpTmtjscaS34mJFXQQ"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe"
+      },
+      "href" : "https://api.spotify.com/v1/artists/22bE4uQ6baNwSHPVcDxLCe",
+      "id" : "22bE4uQ6baNwSHPVcDxLCe",
+      "name" : "The Rolling Stones",
+      "type" : "artist",
+      "uri" : "spotify:artist:22bE4uQ6baNwSHPVcDxLCe"
+    } ],
+    "disc_number" : 1,
+    "duration_ms" : 222813,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USA176510160"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/2PzU4IB8Dr6mxV3lHuaG34"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/2PzU4IB8Dr6mxV3lHuaG34",
+    "id" : "2PzU4IB8Dr6mxV3lHuaG34",
+    "is_local" : false,
+    "is_playable" : true,
+    "name" : "(I Can't Get No) Satisfaction - Mono Version",
+    "popularity" : 76,
+    "preview_url" : null,
+    "track_number" : 7,
+    "type" : "track",
+    "uri" : "spotify:track:2PzU4IB8Dr6mxV3lHuaG34"
+  } ],
+  "seeds" : [ {
+    "initialPoolSize" : 265,
+    "afterFilteringSize" : 123,
+    "afterRelinkingSize" : 128,
+    "id" : "3WrFJ7ztbogyGnTHbHJFl2",
+    "type" : "ARTIST",
+    "href" : "https://api.spotify.com/v1/artists/3WrFJ7ztbogyGnTHbHJFl2"
+  }, {
+    "initialPoolSize" : 293,
+    "afterFilteringSize" : 59,
+    "afterRelinkingSize" : 65,
+    "id" : "2QoU3awHVdcHS8LrZEKvSM",
+    "type" : "ARTIST",
+    "href" : "https://api.spotify.com/v1/artists/2QoU3awHVdcHS8LrZEKvSM"
+  }, {
+    "initialPoolSize" : 282,
+    "afterFilteringSize" : 79,
+    "afterRelinkingSize" : 85,
+    "id" : "38paDDziQ57k1f4VfKTeGk",
+    "type" : "TRACK",
+    "href" : "https://api.spotify.com/v1/tracks/38paDDziQ57k1f4VfKTeGk"
+  }, {
+    "initialPoolSize" : 265,
+    "afterFilteringSize" : 214,
+    "afterRelinkingSize" : 225,
+    "id" : "3UDmHZcBTQp8Iu8droNtUl",
+    "type" : "TRACK",
+    "href" : "https://api.spotify.com/v1/tracks/3UDmHZcBTQp8Iu8droNtUl"
+  }, {
+    "initialPoolSize" : 399,
+    "afterFilteringSize" : 79,
+    "afterRelinkingSize" : 224,
+    "id" : "rock-n-roll",
+    "type" : "GENRE",
+    "href" : null
+  } ]
+}
