@@ -52,6 +52,16 @@ async function getData(url = '', opts = {}) {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
+function pickSeedTracks(valence, genreSeed) {
+  if(valence < 0.5) {
+    // saddest song in the world goes here
+  } else if (valence > 0.5) {
+    // happiest song in the world goes here
+  } else {
+    return genreSeed.tracks;
+  }
+}
+
 function App(props) {
   const questionsArray = InitialData;
   const [step, setStep] = useState(0);
