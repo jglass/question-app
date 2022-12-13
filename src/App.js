@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Question from './Question';
+import Result from './Result';
 import SecondaryQuestion from './SecondaryQuestion';
 import InitialData from './InitialData';
 import SecondaryData from './SecondaryData';
@@ -100,9 +101,9 @@ function App(props) {
     setQuestionsValue(questionsArray);
   }
   console.log(step)
-  if (step === 3 || step === 0) {
+  if (step === 0) {
     return (
-      <div className="App" id="App">
+      <div>
         <ul className="questions">
           {questionsValue.map((questions) => {
             return(<Question imageUrl={questions.imageUrl}
@@ -119,9 +120,23 @@ function App(props) {
           <button onClick={resetForm}>Reset</button>
       </div>
     );
+  } else if (step === 3) {
+    // <Result trackId={questions.trackId} />
+
+    return (
+      <div>
+        <ul className="questions">
+          {questionsValue.map((questions) => {
+            return(<Result testId={questions.questionId}
+                           trackId={questions.trackId}/>)
+          })}
+        </ul>
+          <button onClick={resetForm}>Reset</button>
+      </div>
+    );
   } else {
     return (
-      <div className="App" id="App">
+      <div>
         <ul className="questions">
           {SecondaryData[step - 1].questionText}
           {SecondaryData[step - 1].answers.map((answer) => {
