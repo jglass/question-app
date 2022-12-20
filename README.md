@@ -82,11 +82,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - ~~Render components based on step (genre, buzzfeed, recommendation) (buzzfeed is multiple steps)~~
 - ~~Add valence to spotify query~~
 - ~~Remove images from results~~
-- Don't use loudness (yet)
+- Debug valence not adding track to URL (in network tab)
 - Finish adding different seeds based on question answers
 - Add popularity question
 - Add more questions that don't necessarily correspond 1-1 ("how hippy?")
 - Style Silly questions
+- Don't use loudness (yet)
 - Add GIFs to silly questions
 - Why is fetch running token request twice? (everything running twice)
 - Step 3b: New styles for player
