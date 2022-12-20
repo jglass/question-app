@@ -52,21 +52,12 @@ async function getData(url = '', opts = {}) {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
-function pickSeedTracks(valence, recommendationSeeds) {
-  if(valence < 0.5) {
-    // saddest song in the world goes here
-  } else if (valence > 0.5) {
-    // happiest song in the world goes here
-  } else {
-    return recommendationSeeds.tracks;
-  }
-}
-
-function addDanceability
-
 function App(props) {
   const questionsArray = InitialData;
   const [step, setStep] = useState(0);
+  const [genreSeeds, setGenreSeeds] = useState([]);
+  const [artistSeeds, setArtistSeeds] = useState([]);
+  const [trackSeeds, setTrackSeeds] = useState([]);
   const [recommendationSeeds, setRecommendationSeeds] = useState({});
   const [targetDanceability, setTargetDanceability] = useState("0.5");
   const [targetValence, setTargetValence] = useState("0.5");
@@ -74,9 +65,30 @@ function App(props) {
   const [questionsValue, setQuestionsValue] = useState(questionsArray);
   let artistResult, imageResult;
 
+  function pickSeedTracks(valence, recommendationSeeds) {
+    if(valence < 0.5) {
+      // saddest song in the world goes here
+    } else if (valence > 0.5) {
+      // happiest song in the world goes here
+    } else {
+      return recommendationSeeds.tracks;
+    }
+  }
+
+  function addDanceability() {
+    if(targetDanceability < 0.5) {
+
+    } else if (targetDanceability > 0.5) {
+
+    }
+  }
+
   function onChange(value) {
     if(step === 0) {
-      setRecommendationSeeds(questionsValue.find(q => q.questionText === value));
+      const initialChoice = questionsValue.find(q => q.questionText === value);
+      setGenreSeeds(initialChoice.genre);
+      setArtistSeeds(initialChoice.artists);
+      setTrackSeeds(initialChoice.tracks);
       setStep(step + 1);
       return false;
     } else if(step === 1) {
@@ -90,7 +102,7 @@ function App(props) {
     postData('https://accounts.spotify.com/api/token', authOptions)
       .then((data) => {
         // console.log(data.access_token); // JSON data parsed by `data.json()` call
-        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${recommendationSeeds.artists.join("%2C")}&seed_genres=${recommendationSeeds.genre.join("%2C")}&seed_tracks=${recommendationSeeds.tracks.join("%2C")}&target_danceability=${targetDanceability}&target_valence=${value}&min_popularity=50`, data).
+        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${artistSeeds.join("%2C")}&seed_genres=${genreSeeds.join("%2C")}&seed_tracks=${trackSeeds.join("%2C")}&target_danceability=${targetDanceability}&target_valence=${value}&min_popularity=50`, data).
         then((data) => {
           let nextChoices = data.tracks.map((track, indx) => {
             return(
