@@ -65,22 +65,26 @@ function App(props) {
   const [questionsValue, setQuestionsValue] = useState(questionsArray);
   let artistResult, imageResult;
 
-  function pickSeedTracks(valence, recommendationSeeds) {
+  function addValenceSeeds(valence) {
     if(valence < 0.5) {
-      // saddest song in the world goes here
+      // saddest song in the world goes here: "Sam Stone" by John Prine
+      setTrackSeeds(trackSeeds => [...trackSeeds, "4BIej0swGWja46j5B7l4s1"]);
     } else if (valence > 0.5) {
-      // happiest song in the world goes here
-    } else {
-      return recommendationSeeds.tracks;
+      // happiest song in the world goes here: "Juice" by Lizzo
+      setTrackSeeds(trackSeeds => [...trackSeeds, "0k664IuFwVP557Gnx7RhIl"]);
     }
+
+    return false;
   }
 
-  function addDanceability() {
-    if(targetDanceability < 0.5) {
-
-    } else if (targetDanceability > 0.5) {
-
+  function addDanceabilitySeeds(value) {
+    if(value < 0.5) {
+      setGenreSeeds(genreSeeds => [...genreSeeds, "classical"]);
+    } else if (value > 0.5) {
+      setGenreSeeds(genreSeeds => [...genreSeeds, "electronic"]);
     }
+
+    return false;
   }
 
   function onChange(value) {
@@ -93,9 +97,11 @@ function App(props) {
       return false;
     } else if(step === 1) {
       setTargetDanceability(value);
+      addDanceabilitySeeds(value);
       setStep(step + 1);
       return false;
     } else if(step === 2) {
+      addValenceSeeds(value);
       setTargetValence(value);
     }
 
@@ -124,7 +130,7 @@ function App(props) {
     setSelectedValue("");
     setQuestionsValue(questionsArray);
   }
-  console.log(step)
+
   if (step === 0) {
     return (
       <div>
