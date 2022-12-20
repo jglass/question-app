@@ -62,11 +62,13 @@ function pickSeedTracks(valence, recommendationSeeds) {
   }
 }
 
+function addDanceability
+
 function App(props) {
   const questionsArray = InitialData;
   const [step, setStep] = useState(0);
   const [recommendationSeeds, setRecommendationSeeds] = useState({});
-  const [targetDancibility, setTargetDancibility] = useState("0.5");
+  const [targetDanceability, setTargetDanceability] = useState("0.5");
   const [targetValence, setTargetValence] = useState("0.5");
   const [selectedValue, setSelectedValue] = useState("");
   const [questionsValue, setQuestionsValue] = useState(questionsArray);
@@ -78,7 +80,7 @@ function App(props) {
       setStep(step + 1);
       return false;
     } else if(step === 1) {
-      setTargetDancibility(value);
+      setTargetDanceability(value);
       setStep(step + 1);
       return false;
     } else if(step === 2) {
@@ -88,7 +90,7 @@ function App(props) {
     postData('https://accounts.spotify.com/api/token', authOptions)
       .then((data) => {
         // console.log(data.access_token); // JSON data parsed by `data.json()` call
-        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${recommendationSeeds.artists.join("%2C")}&seed_genres=${recommendationSeeds.genre.join("%2C")}&seed_tracks=${recommendationSeeds.tracks.join("%2C")}&target_danceability=${targetDancibility}&target_valence=${value}&min_popularity=50`, data).
+        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${recommendationSeeds.artists.join("%2C")}&seed_genres=${recommendationSeeds.genre.join("%2C")}&seed_tracks=${recommendationSeeds.tracks.join("%2C")}&target_danceability=${targetDanceability}&target_valence=${value}&min_popularity=50`, data).
         then((data) => {
           let nextChoices = data.tracks.map((track, indx) => {
             return(

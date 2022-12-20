@@ -77,8 +77,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - ~~Step 2: Get random but high popularity artists based on predefined artist and track seeds for that genre~~
 - ~~Step 3: Show artists, have user pick one~~
 - ~~Step 3a: Add preview player (Spotify embed)~~
-- ~~Fix bug with dancibility not getting set~~
-- ~~experiment with max_ and min_ dancibility~~
+- ~~Fix bug with danceability not getting set~~
+- ~~experiment with max_ and min_ danceability~~
 - ~~Render components based on step (genre, buzzfeed, recommendation) (buzzfeed is multiple steps)~~
 - ~~Add valence to spotify query~~
 - ~~Remove images from results~~
