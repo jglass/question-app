@@ -60,7 +60,7 @@ function App(props) {
   const [trackSeeds, setTrackSeeds] = useState([]);
   const [recommendationSeeds, setRecommendationSeeds] = useState({});
   const [targetDanceability, setTargetDanceability] = useState("0.5");
-  const [targetValence, setTargetValence] = useState("0.5");
+  const [targetValence, setTargetValence] = useState();
   const [selectedValue, setSelectedValue] = useState("");
   const [questionsValue, setQuestionsValue] = useState(questionsArray);
   let artistResult, imageResult;
