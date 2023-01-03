@@ -86,6 +86,27 @@ function App(props) {
     return false;
   }
 
+  useEffect(() =>  {
+    postData('https://accounts.spotify.com/api/token', authOptions)
+      .then((data) => {
+        // console.log(data.access_token); // JSON data parsed by `data.json()` call
+        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${artistSeeds.join("%2C")}&seed_genres=${genreSeeds.join("%2C")}&seed_tracks=${trackSeeds.join("%2C")}&target_danceability=${targetDanceability}&target_valence=${targetValence}&min_popularity=50`, data).
+        then((data) => {
+          let nextChoices = data.tracks.map((track, indx) => {
+            return(
+              {
+                questionText:  track.artists[0].name,
+                imageUrl: track.album.images[1].url,
+                trackId: track.id,
+              }
+            )
+          });
+          setQuestionsValue(nextChoices);
+        });
+      });
+    }, [targetValence]
+  )
+
   function onChange(value) {
     if(step === 0) {
       const initialChoice = questionsValue.find(q => q.questionText === value);
@@ -103,33 +124,13 @@ function App(props) {
       addValenceSeeds(value);
       setTargetValence(value);
     }
-
-    postData('https://accounts.spotify.com/api/token', authOptions)
-      .then((data) => {
-        // console.log(data.access_token); // JSON data parsed by `data.json()` call
-        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${artistSeeds.join("%2C")}&seed_genres=${genreSeeds.join("%2C")}&seed_tracks=${trackSeeds.join("%2C")}&target_danceability=${targetDanceability}&target_valence=${value}&min_popularity=50`, data).
-        then((data) => {
-          let nextChoices = data.tracks.map((track, indx) => {
-            return(
-              {
-                questionText:  track.artists[0].name,
-                imageUrl: track.album.images[1].url,
-                trackId: track.id,
-              }
-            )
-          });
-          setQuestionsValue(nextChoices);
-          setSelectedValue(value);
-          setStep(step + 1);
-        });
-      });
   }
 
   function resetForm(e) {
     setQuestionsValue(questionsArray);
   }
 
-  if (step === 0) {
+  if (!genreSeeds.length) {
     return (
       <div>
         <ul className="questions">
@@ -148,9 +149,7 @@ function App(props) {
           <button onClick={resetForm}>Reset</button>
       </div>
     );
-  } else if (step === 3) {
-    // <Result trackId={questions.trackId} />
-
+  } else if (targetValence) {
     return (
       <div>
         <ul className="questions">
