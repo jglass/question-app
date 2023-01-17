@@ -53,7 +53,7 @@ async function getData(url = '', opts = {}) {
 }
 
 function App(props) {
-  const [step, setStep] = useState(0);
+  const secondaryData = SecondaryData;
   const [genreSeeds, setGenreSeeds] = useState([]);
   const [artistSeeds, setArtistSeeds] = useState([]);
   const [trackSeeds, setTrackSeeds] = useState([]);
@@ -119,7 +119,7 @@ function App(props) {
     if(!targetDanceability) {
       setTargetDanceability(value);
       addDanceabilitySeeds(value);
-      setStep(step + 1);
+      secondaryData.shift();
       return false;
     }
 
@@ -166,8 +166,8 @@ function App(props) {
     return (
       <div>
         <ul className="questions">
-          {SecondaryData[step].questionText}
-          {SecondaryData[step].answers.map((answer) => {
+          {secondaryData[0].questionText}
+          {secondaryData[0].answers.map((answer) => {
             return(<SecondaryQuestion
               answerText={answer.answerText}
               answerValue={answer.answerValue}
