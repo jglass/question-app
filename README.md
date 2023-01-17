@@ -83,8 +83,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - ~~Add valence to spotify query~~
 - ~~Remove images from results~~
 ~~- Solve problem with onclick handler referencing state of App component in question component see https://stackoverflow.com/questions/35537229/how-can-i-update-the-parents-state-in-react ~~
-- Solve bug where you have to click twice on last question
+~~- Solve bug where you have to click twice on last question~~
 - Change to new function syntax
+- Add placeholders for spotify content when loading results
 - Think about whether data from files would be better just in HTML
 - Debug valence not adding track to URL (in network tab) (don't use useState hook for final step)
 - Finish adding different seeds based on question answers

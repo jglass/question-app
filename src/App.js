@@ -53,7 +53,6 @@ async function getData(url = '', opts = {}) {
 }
 
 function App(props) {
-  const questionsArray = InitialData;
   const [step, setStep] = useState(0);
   const [genreSeeds, setGenreSeeds] = useState([]);
   const [artistSeeds, setArtistSeeds] = useState([]);
@@ -61,7 +60,6 @@ function App(props) {
   const [recommendationSeeds, setRecommendationSeeds] = useState({});
   const [targetDanceability, setTargetDanceability] = useState();
   const [targetValence, setTargetValence] = useState();
-  const [questionsValue, setQuestionsValue] = useState(questionsArray);
   const [resultsValue, setResultsValue] = useState();
   let artistResult, imageResult;
 
@@ -111,36 +109,33 @@ function App(props) {
   )
 
   function setEntryPoint(value) {
-    const initialChoice = questionsValue.find(q => q.questionText === value);
+    const initialChoice = InitialData.find(q => q.questionText === value);
     setGenreSeeds(initialChoice.genre);
     setArtistSeeds(initialChoice.artists);
     setTrackSeeds(initialChoice.tracks);
   }
 
   function onChange(value) {
-    if(step === 0) {
-      setStep(step + 1);
-      return false;
-    } else if(step === 1) {
+    if(!targetDanceability) {
       setTargetDanceability(value);
       addDanceabilitySeeds(value);
       setStep(step + 1);
       return false;
-    } else if(step === 2) {
-      addValenceSeeds(value);
-      setTargetValence(value);
     }
+
+    addValenceSeeds(value);
+    setTargetValence(value);
   }
 
   function resetForm(e) {
-    setQuestionsValue(questionsArray);
+    // use useEffect (?) hook instead
   }
 
   if (!genreSeeds.length) {
     return (
       <div>
         <ul className="questions">
-          {questionsValue.map((questions) => {
+          {InitialData.map((questions) => {
             return(<Question imageUrl={questions.imageUrl}
                       question={questions.questionText}
                       onClick={setEntryPoint}
