@@ -59,9 +59,10 @@ function App(props) {
   const [artistSeeds, setArtistSeeds] = useState([]);
   const [trackSeeds, setTrackSeeds] = useState([]);
   const [recommendationSeeds, setRecommendationSeeds] = useState({});
-  const [targetDanceability, setTargetDanceability] = useState("0.5");
+  const [targetDanceability, setTargetDanceability] = useState();
   const [targetValence, setTargetValence] = useState();
   const [questionsValue, setQuestionsValue] = useState(questionsArray);
+  const [resultsValue, setResultsValue] = useState();
   let artistResult, imageResult;
 
   function addValenceSeeds(valence) {
@@ -87,6 +88,8 @@ function App(props) {
   }
 
   useEffect(() =>  {
+    if(!targetValence) return function() {};
+
     postData('https://accounts.spotify.com/api/token', authOptions)
       .then((data) => {
         // console.log(data.access_token); // JSON data parsed by `data.json()` call
@@ -101,18 +104,21 @@ function App(props) {
               }
             )
           });
-          setQuestionsValue(nextChoices);
+          setResultsValue(nextChoices);
         });
       });
     }, [targetValence]
   )
 
+  function setEntryPoint(value) {
+    const initialChoice = questionsValue.find(q => q.questionText === value);
+    setGenreSeeds(initialChoice.genre);
+    setArtistSeeds(initialChoice.artists);
+    setTrackSeeds(initialChoice.tracks);
+  }
+
   function onChange(value) {
     if(step === 0) {
-      const initialChoice = questionsValue.find(q => q.questionText === value);
-      setGenreSeeds(initialChoice.genre);
-      setArtistSeeds(initialChoice.artists);
-      setTrackSeeds(initialChoice.tracks);
       setStep(step + 1);
       return false;
     } else if(step === 1) {
@@ -137,7 +143,7 @@ function App(props) {
           {questionsValue.map((questions) => {
             return(<Question imageUrl={questions.imageUrl}
                       question={questions.questionText}
-                      onChange={onChange}
+                      onClick={setEntryPoint}
                       key={questions.questionId}
                       testId={questions.questionId}
                       genre={questions.genre}
@@ -149,13 +155,13 @@ function App(props) {
           <button onClick={resetForm}>Reset</button>
       </div>
     );
-  } else if (targetValence) {
+  } else if (resultsValue) {
     return (
       <div>
         <ul className="questions">
-          {questionsValue.map((questions) => {
-            return(<Result testId={questions.questionId}
-                           trackId={questions.trackId}/>)
+          {resultsValue.map((results) => {
+            return(<Result testId={results.questionId}
+                           trackId={results.trackId}/>)
           })}
         </ul>
           <button onClick={resetForm}>Reset</button>
@@ -165,8 +171,8 @@ function App(props) {
     return (
       <div>
         <ul className="questions">
-          {SecondaryData[step - 1].questionText}
-          {SecondaryData[step - 1].answers.map((answer) => {
+          {SecondaryData[step].questionText}
+          {SecondaryData[step].answers.map((answer) => {
             return(<SecondaryQuestion
               answerText={answer.answerText}
               answerValue={answer.answerValue}

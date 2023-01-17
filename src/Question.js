@@ -5,7 +5,7 @@ import './Question.css';
 function Question(props) {
   return(
     <a href="#"
-      onClick={() => { props.onChange(props.question) } }
+      onClick={() => { props.onClick(props.question) } }
       data-testid={props.testId}
       value={props.question}
       data-genre={props.genre}
