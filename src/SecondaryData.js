@@ -25,17 +25,17 @@ const SecondaryData = [
       {
         answerText: "broken glass",
         answerValue: 0.2,
-        key: "1A",
+        key: "2A",
       },
       {
         answerText: "my feet",
         answerValue: 0.5,
-        key: "1B",
+        key: "2B",
       },
       {
         answerText: "sunshine",
         answerValue: 0.9,
-        key: "1C",
+        key: "2C",
       },
     ],
   },
