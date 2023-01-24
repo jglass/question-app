@@ -16,7 +16,7 @@ var authOptions = {
 
 const data = new URLSearchParams(new FormData(document.querySelector('#tokenRequest')));
 
-export async function postData(url = '', opts = {}) {
+export const postData = async (url = '', opts = {}) => {
   const response = await fetch(url, {
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -31,7 +31,7 @@ export async function postData(url = '', opts = {}) {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
-export async function getData(url = '', opts = {}) {
+export const getData = async (url = '', opts = {}) => {
   const response = await fetch(url, {
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached

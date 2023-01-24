@@ -2,7 +2,7 @@ import React from 'react';
 import './Question.css';
 
 
-function SecondaryQuestion(props) {
+const SecondaryQuestion = (props) => {
   return(
     <a href="#"
       onClick={() => { props.onChange(props.answerValue) } }

@@ -1,8 +1,7 @@
 import React from 'react';
 import './Question.css';
 
-
-function Question(props) {
+const Question = (props) => {
   return(
     <a href="#"
       onClick={() => { props.onClick(props.question) } }

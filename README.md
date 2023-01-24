@@ -84,8 +84,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - ~~Remove images from results~~
 ~~- Solve problem with onclick handler referencing state of App component in question component see https://stackoverflow.com/questions/35537229/how-can-i-update-the-parents-state-in-react ~~
 ~~- Solve bug where you have to click twice on last question~~
-- Move API stuff to separate file under src/lib folder
-- Fix token requests so that auth token is only requested once
+~~- Move API stuff to separate file under src/lib folder~~
+~~- Fix token requests so that auth token is only requested once~~
 - Change to new function syntax
 - Compartmentalize list into features, bugs, wishlist, ideas
 - Add placeholders for spotify content when loading results

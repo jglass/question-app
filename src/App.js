@@ -7,7 +7,7 @@ import SecondaryData from './SecondaryData';
 import './App.css';
 import { getData, postData } from './lib/apiHelper';
 
-function App(props) {
+const App = (props) => {
   const secondaryData = SecondaryData;
   const [genreSeeds, setGenreSeeds] = useState([]);
   const [artistSeeds, setArtistSeeds] = useState([]);
@@ -18,7 +18,7 @@ function App(props) {
   const [resultsValue, setResultsValue] = useState();
   let artistResult, imageResult;
 
-  function addValenceSeeds(valence) {
+  const addValenceSeeds = (valence) => {
     if(valence < 0.5) {
       // saddest song in the world goes here: "Sam Stone" by John Prine
       setTrackSeeds(trackSeeds => [...trackSeeds, "4BIej0swGWja46j5B7l4s1"]);
@@ -30,7 +30,7 @@ function App(props) {
     return false;
   }
 
-  function addDanceabilitySeeds(value) {
+  const addDanceabilitySeeds = (value) => {
     if(value < 0.5) {
       setGenreSeeds(genreSeeds => [...genreSeeds, "classical"]);
     } else if (value > 0.5) {
@@ -41,7 +41,7 @@ function App(props) {
   }
 
   useEffect(() =>  {
-    if(!targetValence) return function() {};
+    if(!targetValence) return(() => {});
 
     postData('https://accounts.spotify.com/api/token')
       .then((data) => {
@@ -63,14 +63,14 @@ function App(props) {
     }, [targetValence]
   )
 
-  function setEntryPoint(value) {
+  const setEntryPoint = (value) => {
     const initialChoice = InitialData.find(q => q.questionText === value);
     setGenreSeeds(initialChoice.genre);
     setArtistSeeds(initialChoice.artists);
     setTrackSeeds(initialChoice.tracks);
   }
 
-  function onChange(value) {
+  const onChange = (value) => {
     if(!targetDanceability) {
       setTargetDanceability(value);
       addDanceabilitySeeds(value);
@@ -82,7 +82,7 @@ function App(props) {
     setTargetValence(value);
   }
 
-  function resetForm(e) {
+  const resetForm = (e) => {
     // use useEffect (?) hook instead
   }
 
