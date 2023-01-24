@@ -1,5 +1,7 @@
 import React from 'react';
 import './Question.css';
+import './SecondaryQuestion.css';
+
 
 
 const SecondaryQuestion = (props) => {
@@ -8,9 +10,11 @@ const SecondaryQuestion = (props) => {
       onClick={() => { props.onChange(props.answerValue) } }
       data-testid={props.testId}
       value={props.answerValue} >
-      <li>
-        {props.answerText}
-      </li>
+      <button>
+        <li>
+          {props.answerText}
+        </li>
+      </button>
     </a>
   );
 }

@@ -89,7 +89,7 @@ const App = (props) => {
   if (!genreSeeds.length) {
     return (
       <div>
-        <ul className="questions">
+        <ul className="genre-questions">
           {InitialData.map((questions) => {
             return(<Question imageUrl={questions.imageUrl}
                       question={questions.questionText}
@@ -108,7 +108,7 @@ const App = (props) => {
   } else if (resultsValue) {
     return (
       <div>
-        <ul className="questions">
+        <ul className="results">
           {resultsValue.map((results) => {
             return(<Result testId={results.questionId}
                            trackId={results.trackId}/>)
@@ -121,7 +121,7 @@ const App = (props) => {
     return (
       <div>
         <ul className="questions">
-          {secondaryData[0].questionText}
+          <h1>{secondaryData[0].questionText}</h1>
           {secondaryData[0].answers.map((answer) => {
             return(<SecondaryQuestion
               answerText={answer.answerText}
