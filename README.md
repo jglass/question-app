@@ -86,7 +86,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ~~- Solve bug where you have to click twice on last question~~
 ~~- Move API stuff to separate file under src/lib folder~~
 ~~- Fix token requests so that auth token is only requested once~~
-- Change to new function syntax
+~~- Change to new function syntax~~
+- Update tests
+- Finish Styling questions
 - Compartmentalize list into features, bugs, wishlist, ideas
 - Add placeholders for spotify content when loading results
 - Think about whether data from files would be better just in HTML
