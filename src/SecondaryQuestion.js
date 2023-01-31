@@ -1,16 +1,18 @@
 import React from 'react';
 import './Question.css';
+import './SecondaryQuestion.css';
 
-
-function SecondaryQuestion(props) {
+const SecondaryQuestion = (props) => {
   return(
     <a href="#"
       onClick={() => { props.onChange(props.answerValue) } }
       data-testid={props.testId}
       value={props.answerValue} >
-      <li>
-        {props.answerText}
-      </li>
+      <button>
+        <li>
+          {props.answerText}
+        </li>
+      </button>
     </a>
   );
 }

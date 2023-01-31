@@ -82,13 +82,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - ~~Render components based on step (genre, buzzfeed, recommendation) (buzzfeed is multiple steps)~~
 - ~~Add valence to spotify query~~
 - ~~Remove images from results~~
-- Debug valence not adding track to URL (in network tab)
+~~- Solve problem with onclick handler referencing state of App component in question component see https://stackoverflow.com/questions/35537229/how-can-i-update-the-parents-state-in-react ~~
+~~- Solve bug where you have to click twice on last question~~
+~~- Move API stuff to separate file under src/lib folder~~
+~~- Fix token requests so that auth token is only requested once~~
+~~- Change to new function syntax~~
+- Update tests
+- Finish Styling questions
+- Compartmentalize list into features, bugs, wishlist, ideas
+- Add placeholders for spotify content when loading results
+- Think about whether data from files would be better just in HTML
+- Debug valence not adding track to URL (in network tab) (don't use useState hook for final step)
 - Finish adding different seeds based on question answers
 - Add popularity question
 - Add more questions that don't necessarily correspond 1-1 ("how hippy?")
 - Style Silly questions
 - Don't use loudness (yet)
 - Add GIFs to silly questions
+- localize questions? ie local radio station 
 - Why is fetch running token request twice? (everything running twice)
 - Step 3b: New styles for player
 - Step 4: Add Step 2.5 where user answers Buzzfeed style questions using new component
@@ -101,11 +112,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - URL should change when user clicks (and should go to state when user goes to URL)
 - Convert credentials for to Virtual Dom Element
 - Ask user if they want famous or obscure recommendations
-- Build Player?
-- Finish testing spotify flow for getting data
 - Add more data or get from API
 - Finish Styling
-- Identify pic of artist?
 - A/B test (eg image only vs text)
 - Eclectic artist quiz (id song based on artist)
 - Rotating Holiday Music for genre
