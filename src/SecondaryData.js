@@ -40,22 +40,22 @@ const SecondaryData = [
     ],
   },
   {
-    questionText: "I'm walking on ...",
+    questionText: "I liked them",
     answers: [
       {
-        answerText: "broken glass",
-        answerValue: 0.2,
-        key: "1A",
+        answerText: "before it was cool",
+        answerValue: 10,
+        key: "3A",
       },
       {
-        answerText: "my feet",
-        answerValue: 0.5,
-        key: "1B",
+        answerText: "after their song was on Melrose Place",
+        answerValue: 50,
+        key: "3B",
       },
       {
-        answerText: "sunshine",
-        answerValue: 0.9,
-        key: "1C",
+        answerText: "when they were on high rotation on KROQ",
+        answerValue: 90,
+        key: "3C",
       },
     ],
   },

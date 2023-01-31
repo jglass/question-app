@@ -99,6 +99,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Style Silly questions
 - Don't use loudness (yet)
 - Add GIFs to silly questions
+- localize questions? ie local radio station 
 - Why is fetch running token request twice? (everything running twice)
 - Step 3b: New styles for player
 - Step 4: Add Step 2.5 where user answers Buzzfeed style questions using new component

@@ -15,6 +15,7 @@ const App = (props) => {
   const [recommendationSeeds, setRecommendationSeeds] = useState({});
   const [targetDanceability, setTargetDanceability] = useState();
   const [targetValence, setTargetValence] = useState();
+  const [targetPopularity, setTargetPopularity] = useState();
   const [resultsValue, setResultsValue] = useState();
   let artistResult, imageResult;
 
@@ -41,12 +42,12 @@ const App = (props) => {
   }
 
   useEffect(() =>  {
-    if(!targetValence) return(() => {});
+    if(!targetPopularity) return(() => {});
 
     postData('https://accounts.spotify.com/api/token')
       .then((data) => {
         // console.log(data.access_token); // JSON data parsed by `data.json()` call
-        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${artistSeeds.join("%2C")}&seed_genres=${genreSeeds.join("%2C")}&seed_tracks=${trackSeeds.join("%2C")}&target_danceability=${targetDanceability}&target_valence=${targetValence}&min_popularity=50`, data).
+        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${artistSeeds.join("%2C")}&seed_genres=${genreSeeds.join("%2C")}&seed_tracks=${trackSeeds.join("%2C")}&target_danceability=${targetDanceability}&target_valence=${targetValence}&target_popularity=${targetPopularity}`, data).
         then((data) => {
           let nextChoices = data.tracks.map((track, indx) => {
             return(
@@ -60,7 +61,7 @@ const App = (props) => {
           setResultsValue(nextChoices);
         });
       });
-    }, [targetValence]
+    }, [targetPopularity]
   )
 
   const setEntryPoint = (value) => {
@@ -78,8 +79,14 @@ const App = (props) => {
       return false;
     }
 
-    addValenceSeeds(value);
-    setTargetValence(value);
+    if(!targetValence) {
+      setTargetValence(value);
+      addValenceSeeds(value);
+      secondaryData.shift();
+      return false;
+    }
+
+    setTargetPopularity(value);
   }
 
   const resetForm = (e) => {

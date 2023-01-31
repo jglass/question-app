@@ -2,8 +2,6 @@ import React from 'react';
 import './Question.css';
 import './SecondaryQuestion.css';
 
-
-
 const SecondaryQuestion = (props) => {
   return(
     <a href="#"
