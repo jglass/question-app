@@ -59,6 +59,26 @@ const SecondaryData = [
       },
     ],
   },
+  {
+    questionText: "Is it",
+    answers: [
+      {
+        answerText: "live",
+        answerValue: 0.8,
+        key: "4A",
+      },
+      {
+        answerText: "memorex",
+        answerValue: 0.2,
+        key: "4B",
+      },
+      {
+        answerText: "whatever",
+        answerValue: 0.5,
+        key: "4C",
+      },
+    ],
+  },
 ];
 
 export default SecondaryData;

@@ -87,6 +87,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ~~- Move API stuff to separate file under src/lib folder~~
 ~~- Fix token requests so that auth token is only requested once~~
 ~~- Change to new function syntax~~
+- Get "liveness" to return better results
 - Update tests
 - Finish Styling questions
 - Compartmentalize list into features, bugs, wishlist, ideas
@@ -99,7 +100,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Style Silly questions
 - Don't use loudness (yet)
 - Add GIFs to silly questions
-- localize questions? ie local radio station 
+- localize questions? ie local radio station
 - Why is fetch running token request twice? (everything running twice)
 - Step 3b: New styles for player
 - Step 4: Add Step 2.5 where user answers Buzzfeed style questions using new component
