@@ -7,7 +7,7 @@ import SecondaryData from './SecondaryData';
 import './App.css';
 import { getData, postData } from './lib/apiHelper';
 
-const App = (props) => {
+const App = () => {
   const secondaryData = SecondaryData;
   const [genreSeeds, setGenreSeeds] = useState([]);
   const [artistSeeds, setArtistSeeds] = useState([]);
@@ -48,8 +48,16 @@ const App = (props) => {
     postData('https://accounts.spotify.com/api/token')
       .then((data) => {
         // console.log(data.access_token); // JSON data parsed by `data.json()` call
-        getData(`https://api.spotify.com/v1/recommendations?limit=12&market=ES&seed_artists=${artistSeeds.join("%2C")}&seed_genres=${genreSeeds.join("%2C")}&seed_tracks=${trackSeeds.join("%2C")}&target_danceability=${targetDanceability}&target_valence=${targetValence}&target_popularity=${targetPopularity}&min_liveness=${targetLiveness}`, data).
-        then((data) => {
+        getData(`https://api.spotify.com/v1/recommendations?` +
+                `limit=12&market=ES&` +
+                `1seed_artists=${artistSeeds.join("%2C")}&` +
+                `seed_genres=${genreSeeds.join("%2C")}&` +
+                `seed_tracks=${trackSeeds.join("%2C")}&` +
+                `target_danceability=${targetDanceability}&` +
+                `target_valence=${targetValence}&` +
+                `target_popularity=${targetPopularity}&` +
+                `min_liveness=${targetLiveness}`,
+        data).then((data) => {
           let nextChoices = data.tracks.map((track, indx) => {
             return(
               {
@@ -72,7 +80,7 @@ const App = (props) => {
     setTrackSeeds(initialChoice.tracks);
   }
 
-  const onChange = (value) => {
+  const onChangeHandler = (value) => {
     if(!targetDanceability) {
       setTargetDanceability(value);
       addDanceabilitySeeds(value);
@@ -140,7 +148,7 @@ const App = (props) => {
             return(<SecondaryQuestion
               answerText={answer.answerText}
               answerValue={answer.answerValue}
-              onChange={onChange}
+              onChange={onChangeHandler}
               key={answer.key}
               testId={answer.key}
             />);
