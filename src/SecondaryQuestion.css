@@ -3,5 +3,8 @@
 }
 
 button {
-  background: linear-gradient(#c9024b, #FFF);
+  background: blue;
+  color: white;
+  min-height: 50px;
+  width: 80%;
 }
