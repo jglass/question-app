@@ -42,6 +42,16 @@ const App = () => {
     return false;
   }
 
+  const livenessSegment = (value) => {
+    if(value < 0.5) {
+      return `max_liveness=${value}`
+    } else if (value > 0.5) {
+      return `min_liveness=${value}`
+    } else {
+      return ``;
+    }
+  }
+
   useEffect(() =>  {
     if(!targetLiveness) return(() => {});
 
@@ -56,7 +66,7 @@ const App = () => {
                 `target_danceability=${targetDanceability}&` +
                 `target_valence=${targetValence}&` +
                 `target_popularity=${targetPopularity}&` +
-                `min_liveness=${targetLiveness}`,
+                livenessSegment(targetLiveness),
         data).then((data) => {
           let nextChoices = data.tracks.map((track, indx) => {
             return(
