@@ -88,6 +88,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ~~- Fix token requests so that auth token is only requested once~~
 ~~- Change to new function syntax~~
 ~~- Get "liveness" to return better results~~
+- Add SCSS preprocessor to use mixins
+- Add mixins for screen sizes https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
 - Finish Styling questions
 - Update tests
 - Compartmentalize list into features, bugs, wishlist, ideas
