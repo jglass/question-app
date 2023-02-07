@@ -87,9 +87,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ~~- Move API stuff to separate file under src/lib folder~~
 ~~- Fix token requests so that auth token is only requested once~~
 ~~- Change to new function syntax~~
-- Get "liveness" to return better results
-- Update tests
+~~- Get "liveness" to return better results~~
 - Finish Styling questions
+- Update tests
 - Compartmentalize list into features, bugs, wishlist, ideas
 - Add placeholders for spotify content when loading results
 - Think about whether data from files would be better just in HTML

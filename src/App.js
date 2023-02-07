@@ -121,6 +121,8 @@ const App = () => {
   if (!genreSeeds.length) {
     return (
       <div>
+        <h1>What Music Should I Listen To?</h1>
+        <h3>Select a Genre, Music Nerd</h3>
         <ul className="genre-questions">
           {InitialData.map((questions) => {
             return(<Question imageUrl={questions.imageUrl}
