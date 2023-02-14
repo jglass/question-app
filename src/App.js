@@ -17,6 +17,7 @@ const App = () => {
   const [targetValence, setTargetValence] = useState();
   const [targetPopularity, setTargetPopularity] = useState();
   const [targetLiveness, setTargetLiveness] = useState();
+  const [targetSeriousness, setTargetSeriousness] = useState();
   const [resultsValue, setResultsValue] = useState();
   let artistResult, imageResult;
 
@@ -42,6 +43,15 @@ const App = () => {
     return false;
   }
 
+  const addSeriousnessSeeds = (value) => {
+    if(value < 0.5) {
+      setArtistSeeds(artistSeeds => [...artistSeeds, "1bDWGdIC2hardyt55nlQgG"]);
+    } else if (value > 0.5) {
+      setArtistSeeds(artistSeeds => [...artistSeeds, "74ASZWbe4lXaubB36ztrGX"]);
+    }
+    return false;
+  }
+
   const livenessSegment = (value) => {
     if(value < 0.5) {
       return `max_liveness=${value}`
@@ -53,7 +63,7 @@ const App = () => {
   }
 
   useEffect(() =>  {
-    if(!targetLiveness) return(() => {});
+    if(!targetSeriousness) return(() => {});
 
     postData('https://accounts.spotify.com/api/token')
       .then((data) => {
@@ -80,7 +90,7 @@ const App = () => {
           setResultsValue(nextChoices);
         });
       });
-    }, [targetLiveness]
+    }, [targetSeriousness]
   )
 
   const setEntryPoint = (value) => {
@@ -111,7 +121,14 @@ const App = () => {
       return false;
     }
 
-    setTargetLiveness(value);
+    if(!targetLiveness) {
+      setTargetLiveness(value);
+      secondaryData.shift();
+      return false;
+    }
+
+    addSeriousnessSeeds(value);
+    setTargetSeriousness(value);
   }
 
   const resetForm = (e) => {

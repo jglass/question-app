@@ -79,6 +79,26 @@ const SecondaryData = [
       },
     ],
   },
+  {
+    questionText: "Do you want it",
+    answers: [
+      {
+        answerText: "funny",
+        answerValue: 0.2,
+        key: "5A",
+      },
+      {
+        answerText: "serious",
+        answerValue: 0.8,
+        key: "5B",
+      },
+      {
+        answerText: "funnious",
+        answerValue: 0.5,
+        key: "5C",
+      },
+    ],
+  },
 ];
 
 export default SecondaryData;
