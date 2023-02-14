@@ -60,7 +60,7 @@ const App = () => {
         // console.log(data.access_token); // JSON data parsed by `data.json()` call
         getData(`https://api.spotify.com/v1/recommendations?` +
                 `limit=12&market=ES&` +
-                `1seed_artists=${artistSeeds.join("%2C")}&` +
+                `seed_artists=${artistSeeds.join("%2C")}&` +
                 `seed_genres=${genreSeeds.join("%2C")}&` +
                 `seed_tracks=${trackSeeds.join("%2C")}&` +
                 `target_danceability=${targetDanceability}&` +
