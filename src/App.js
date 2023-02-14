@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Question from './Question';
 import Result from './Result';
 import SecondaryQuestion from './SecondaryQuestion';
-import InitialData from './InitialData';
-import SecondaryData from './SecondaryData';
-import './App.css';
+import InitialData from './lib/InitialData';
+import SecondaryData from './lib/SecondaryData';
+import './App.scss';
 import { getData, postData } from './lib/apiHelper';
 
 const App = () => {

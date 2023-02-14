@@ -48,7 +48,8 @@
     "jest-environment-enzyme": "^7.1.2",
     "jest-environment-jsdom": "^29.0.3",
     "jest-enzyme": "^7.1.2",
-    "jest-webpack": "^0.5.1"
+    "jest-webpack": "^0.5.1",
+    "sass": "^1.58.1"
   },
   "jest": {
     "moduleNameMapper": {
