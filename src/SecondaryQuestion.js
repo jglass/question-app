@@ -1,6 +1,6 @@
 import React from 'react';
-import './Question.css';
-import './SecondaryQuestion.scss';
+import './scss/Question.scss';
+import './scss/SecondaryQuestion.scss';
 
 const SecondaryQuestion = (props) => {
   return(

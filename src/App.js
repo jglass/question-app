@@ -4,7 +4,7 @@ import Result from './Result';
 import SecondaryQuestion from './SecondaryQuestion';
 import InitialData from './lib/InitialData';
 import SecondaryData from './lib/SecondaryData';
-import './App.scss';
+import './scss/App.scss';
 import { getData, postData } from './lib/apiHelper';
 
 const App = () => {

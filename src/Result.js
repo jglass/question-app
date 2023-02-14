@@ -1,5 +1,5 @@
 import React from 'react';
-import './Question.css';
+import './scss/Question.scss';
 
 
 const Result = (props) => {
