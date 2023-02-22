@@ -62,8 +62,21 @@ const App = () => {
     }
   }
 
+  const numberOfSeeds = () => {
+    return (
+      genreSeeds.length  +
+      artistSeeds.length +
+      trackSeeds.length
+    );
+  }
+
   useEffect(() =>  {
     if(!targetSeriousness) return(() => {});
+
+    if(numberOfSeeds() > 5) {
+      const tempTrackSeeds = trackSeeds.shift();
+      setTrackSeeds(tempTrackSeeds);
+    }
 
     postData('https://accounts.spotify.com/api/token')
       .then((data) => {
